@@ -30,7 +30,7 @@ Make sure you're using the latest [07th-mod installer](https://07th-mod.com/home
 
 Follow us on Github: [Github](https://github.com/OniUA) 🌟
 
-Read our latest updates on [Telegram](https://tiny.cc/OniUA) 📰
+Read our latest updates on [Telegram](https://tiny.cc/oniua) 📰
 
 Or check out our Team blog at [Kutok](https://kutok.io/OniUA) 🚀
 
