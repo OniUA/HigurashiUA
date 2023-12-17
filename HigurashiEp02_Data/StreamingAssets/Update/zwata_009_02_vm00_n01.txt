@@ -1,0 +1,59 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "「前原さんの御宅でしょうか。",
+		   NULL, "\"Це дім родини Маебара?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "夜分遅くに失礼いたします…。",
+		   NULL, " Перепрошую, що так пізно телефоную...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "公由と申します。",
+		   NULL, " Це Кімійоші.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "ご主人でいらっしゃいますか？」",
+		   NULL, " Ви — голова родини?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　中年の男性の声＠......一気に失望する￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　中年の男性の声。",
+		   NULL, "Говорив чоловік середнього віку.", Line_WaitForInput);
+	OutputLine(NULL, "……一気に失望する。",
+		   NULL, " Надія остаточно покинула мене...", Line_Normal);
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "「あ、いえいえ、お忙しければ結構なんです。",
+		   NULL, "\"О, ні-ні-ні, якщо він зайнятий, то не треба...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "…実は恐縮なんですが…ウチのお爺ちゃんがお邪魔してませんでしょうか。」",
+		   NULL, " Це може прозвучати дивно, але... наш дідусь часом не у вас?..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "「そうですか！",
+		   NULL, "\"Зрозуміло.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "　夜分遅くに申し訳ありませんでした。",
+		   NULL, " Ще раз прошу вибачення за пізній дзвінок.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "", 128, TRUE);
+	OutputLine(NULL, "失礼いたします……。」",
+		   NULL, " До побачення...\"", Line_Normal);
+}

@@ -1,0 +1,145 @@
+void main()
+{
+
+//９■スクラップ帳よりⅥ
+//*Sub_Tips_034
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	PlayBGM( 1, "msys15", 56, 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
+	DrawScene("background/simen3", 1000 );
+
+//locate 4,6
+
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+	SetStyleOfMessageSwinging( 1 );
+
+//＜綿流しの意義について￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜綿流しの意義について＞",
+		   NULL, "<Значення Ватанаґаші>", Line_Normal);
+	ClearMessage();
+
+	SetStyleOfMessageSwinging( 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　犠牲者を狩り、それを食す宴、綿流し＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　犠牲者を狩り、それを食す宴、綿流し。",
+		   NULL, "Ватанаґаші — свято полювання та пожирання спійманих жертв.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　それ自体は異常なものでありながらも、同時に娯楽性を伴うものだと考えられてきた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それ自体は異常なものでありながらも、同時に娯楽性を伴うものだと考えられてきた。",
+		   NULL, "Такий сценарій свята, існування якого саме по собі було незвичайним, вважався формою розваги.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//（異常な行為に娯楽性を感じるという「無理」によって、自分たちが人間を超越した存在だと信じこもうとしたのかもしれない。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（異常な行為に娯楽性を感じるという「無理」によって、自分たちが人間を超越した存在だと信じこもうとしたのかもしれない。）",
+		   NULL, "(Можливо, виконавці цього дійства вважали себе кимось на кшталт божеств саме через те, що називали розвагою такі нелюдські вчинки.)", Line_Normal);
+	ClearMessage();
+
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　だが、その説に一石を投じる興味深い文献を見つけた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、その説に一石を投じる興味深い文献を見つけた。",
+		   NULL, "Однак я знайшла кілька дуже цікавих творів, які ставлять це пояснення під сумнів.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　口伝らしく、鵜呑みにできるものではなさそうだが、その内容は少し興味を惹く＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　口伝らしく、鵜呑みにできるものではなさそうだが、その内容は少し興味を惹く。",
+		   NULL, "Як і з більшістю записів усних переказів, їх досить складно назвати достовірними джерелами, але кілька моментів привернули мою увагу.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　それによると、鬼ヶ淵村の住人にも、この儀式を「恐れる」感情があったと言うのだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それによると、鬼ヶ淵村の住人にも、この儀式を「恐れる」感情があったと言うのだ。",
+		   NULL, "Згідно із цими записами, страх перед святковими ритуалами відчували навіть самі жителі Оніґафучі.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　女子供は蒼白になりながら震え、血に弱い者は嘔吐しながらも、それでもなお、宴（解体作業）を見ることを強要されたのだと言う￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　女子供は蒼白になりながら震え、血に弱い者は嘔吐しながらも、それでもなお、宴（解体作業）を見ることを強要されたのだと言う。",
+		   NULL, "Жінки блідли, дітей трусило, особливо слабких нудило — але, як стверджують записи, спостерігати за пожиранням (себто розтином жертви) було обов'язково для всіх.", Line_Normal);
+	ClearMessage();
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　これは非常に面白い異聞だ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これは非常に面白い異聞だ。",
+		   NULL, "А ось це вже дуже цікаво.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　私はこれまで、鬼ヶ淵村の住人は綿流しの儀式にある種の陶酔を得ていると考えてきた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はこれまで、鬼ヶ淵村の住人は綿流しの儀式にある種の陶酔を得ていると考えてきた。",
+		   NULL, "Досі я думала, що мешканці Оніґафучі благоговіли перед ритуалом Ватанаґаші.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　自分たちが見下す「卑しい人間風情」を魚を下ろすように解体し＠それを食すことによって自分たちの神聖性を確認してきた、...そう考えてきた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　自分たちが見下す「卑しい人間風情」を魚を下ろすように解体し、",
+		   NULL, "Підносячи себе над звичайними людьми, ставлячись до них як до нижчих створінь, патраючи як рибин,", Line_WaitForInput);
+	OutputLine(NULL, "それを食すことによって自分たちの神聖性を確認してきた、…そう考えてきた。",
+		   NULL, " пожираючи їхні нутрощі, вони підкреслювали свою божественність... принаймні я так думала.", Line_Normal);
+	ClearMessage();
+
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　だが、この儀式によって村人が得ていたものが陶酔でなく恐怖だったとすると、儀式の意味するところは大きく変わってしまう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、この儀式によって村人が得ていたものが陶酔でなく恐怖だったとすると、儀式の意味するところは大きく変わってしまう。",
+		   NULL, "Однак якщо селяни під час проведення ритуалу дійсно відчували не захват, а жах, це означає, що ритуал являв собою щось абсолютно інше.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　つまり、有力者たちが自分たちの都合のいいように組み上げた戒律を厳守させるために催した、見せしめ処刑だった可能性が出てくる￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、有力者たちが自分たちの都合のいいように組み上げた戒律を厳守させるために催した、見せしめ処刑だった可能性が出てくる。",
+		   NULL, "Можливо, публічні страти мали слугувати для селян попередженням про необхідність дотримання заповідей, придуманих старійшинами — для власного ж блага.", Line_Normal);
+	ClearMessage();
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　鬼ヶ淵村を実効支配してきたのは御三家と呼ばれる３つの旧家だ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鬼ヶ淵村を実効支配してきたのは御三家と呼ばれる３つの旧家だ。",
+		   NULL, "В Оніґафучі всім заправляли три сім'ї — Три Панівні Роди.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　この御三家の研究なくして、鬼ヶ淵村の真実には迫れまい￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この御三家の研究なくして、鬼ヶ淵村の真実には迫れまい。",
+		   NULL, "І навряд чи мені вдасться дізнатися істину про Оніґафучі, не провівши пошук інформації про них.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 1000 );
+	SetValidityOfInput( TRUE );
+
+}

@@ -1,0 +1,15 @@
+void main()
+{
+}
+
+void dialog001()
+{
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300064", 256, TRUE);
+	OutputLine(NULL, "「かつてフランスからある高名なシェフが来日した時、ホテルの人たちが様々な材料をフランスから空輸したんだそうです。",
+		NULL, "\"Є одна історія про відомого французького шеф-кухаря. Коли він завітав до Японії, люди з готелю, в якому він зупинився, привезли для нього купу інгредієнтів, імпортованих із Франції.", GetGlobalFlag(GLinemodeSp));
+}

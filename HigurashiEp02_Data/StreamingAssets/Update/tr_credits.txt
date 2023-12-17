@@ -1,0 +1,16 @@
+void main()
+{
+}
+
+void tr_credits()
+{
+	PlaySE( 4, "wa_044", 56, 64 );
+	SetValidityOfInput( FALSE );
+	DrawScene("black", 500 );
+	Wait( 100 );
+	PlayBGM( 1, "lsys14", 128, 0 );
+	DrawBustshot(1, "Credits", 0, 1080, -890, FALSE, 10000, 0, 0, 0, 0, 0, 0, 0, 0, TRUE );
+	MoveBustshot( 1, NULL, 0, -1080, -890, 1, 39000, TRUE );
+	FadeOutBGM( 1, 600, TRUE );
+	//DrawScene("black", 600 );
+}

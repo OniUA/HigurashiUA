@@ -1,0 +1,189 @@
+void main()
+{
+
+
+//９■スクラップ帳よりⅦ
+//*Sub_Tips_035
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	PlayBGM( 1, "msys13", 56, 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
+	DrawScene("background/simen3", 1000 );
+
+//locate 5,6
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+	SetStyleOfMessageSwinging( 1 );
+
+//＜御三家について￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜御三家について＞",
+		   NULL, "<Три Панівні Роди>", Line_Normal);
+	ClearMessage();
+
+	SetStyleOfMessageSwinging( 0 );
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　御三家は鬼ヶ淵村を実効支配してきた３つの旧家を指す＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　御三家は鬼ヶ淵村を実効支配してきた３つの旧家を指す。",
+		   NULL, "\"Три Панівні Роди\" — це три сім'ї, які з прадавніх часів заправляли всім в Оніґафучі.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　内訳は公由家、古手家、園崎家で、いずれも現存している＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　内訳は公由家、古手家、園崎家で、いずれも現存している。",
+		   NULL, "Це був рід Кімійоші, рід Фуруде, та рід Сонодзакі; нащадки всіх трьох родин живуть донині.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//（古代ほどの支配力はないにせよ、今日でも強い影響力を堅持しているようである。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（古代ほどの支配力はないにせよ、今日でも強い影響力を堅持しているようである。）",
+		   NULL, "(Хоч влади в них тепер і не так багато, як у минулому, вони все ще мають значний вплив.)", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　御三家は、鬼ヶ淵沼より現れた鬼の血を最も濃く残すと伝えられている￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　御三家は、鬼ヶ淵沼より現れた鬼の血を最も濃く残すと伝えられている。",
+		   NULL, "За легендою, у венах тих, хто походить із Трьох Родів, тече найчистіша кров демонів боліт Оніґафучі.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//＜公由（キミヨシ）家＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜公由（キミヨシ）家＞",
+		   NULL, "<Рід Кімійоші>", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　公由家は御三家の筆頭家として大きな力を持っていたらしいが、今日にあっては御三家をリードするほどではない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　公由家は御三家の筆頭家として大きな力を持っていたらしいが、今日にあっては御三家をリードするほどではない。",
+		   NULL, "Рід Кімійоші, як вважалося, був найвпливовішим із трьох, та станом на зараз це вже зовсім не так.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　現村長（公由喜一郎）はこの家の出身である＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　現村長（公由喜一郎）はこの家の出身である。",
+		   NULL, "З цього роду походить теперішній староста села, Кійчіро Кімійоші.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　公選制が導入されるまで、自動的に公由家が代々村長に就任してきたのは、古い体制の名残だと思われる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　公選制が導入されるまで、自動的に公由家が代々村長に就任してきたのは、古い体制の名残だと思われる。",
+		   NULL, "Скоріше за все, обрання нащадка родини Кімійоші головою села кожного покоління — шана старим звичаям.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　もっとも対抗馬が出ないため、戦後の公選制導入後も公由家が村長に就くことは変わっていない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もっとも対抗馬が出ないため、戦後の公選制導入後も公由家が村長に就くことは変わっていない。",
+		   NULL, "Навіть коли в епоху після війни старосту стали обирати шляхом народного голосування, вибори все одно вигравали Кімійоші — інших учасників просто не було.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//＜古手（フルデ）家＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜古手（フルデ）家＞",
+		   NULL, "<Рід Фуруде>", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　古代から信仰の中心となり、オヤシロさまを祀る唯一の神社を守ってきた一族である＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　古代から信仰の中心となり、オヤシロさまを祀る唯一の神社を守ってきた一族である。",
+		   NULL, "Клан Фуруде з давніх-давен був осередком віри. Вони захищали святиню, збудовану на честь бога Ояшіро.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　オヤシロさまの声を代弁する唯一の存在として、長く崇められてきたが、戦争で分家筋がほとんど絶え、今では本家のみとなっている￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまの声を代弁する唯一の存在として、長く崇められてきたが、戦争で分家筋がほとんど絶え、今では本家のみとなっている。",
+		   NULL, "Фуруде довгий час шанували як єдиних смертних, здатних передавати людям волю бога Ояшіро. Однак після війни рід розколовся і втратив більшу частину влади. Зараз від нього лишилася тільки головна родина.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　その本家も、現在では一人娘（古手梨花）を残すのみなので、この代で潰えるかもしれない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その本家も、現在では一人娘（古手梨花）を残すのみなので、この代で潰えるかもしれない。",
+		   NULL, "Єдиною наразі живою її представницею є дочка, Ріка Фуруде — таким чином, у цьому поколінні рід може перерватися.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　古手家の女子を尊ぶ古い習慣があるらしく、一人娘の梨花は、年寄り連中に崇められている様子だ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　古手家の女子を尊ぶ古い習慣があるらしく、一人娘の梨花は、年寄り連中に崇められている様子だ。",
+		   NULL, "За старою традицією, більш за все з роду Фуруде вшановують жінок, тому Ріку, єдину дочку, дуже поважають літні жителі села.", Line_Normal);
+	ClearMessage();
+
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//＜園崎（ソノザキ）家＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜園崎（ソノザキ）家＞",
+		   NULL, "<Рід Сонодзакі>", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　鬼ヶ淵村の戒律を守るある種の警察官的な役割を担ったと伝えられている＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鬼ヶ淵村の戒律を守るある種の警察官的な役割を担ったと伝えられている。",
+		   NULL, "За дотриманням законів, встановлених у селі Оніґафучі, слідкували саме Сонодзакі — вони були кимось на кшталт місцевої поліції.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　御三家の中では比較的、弱い立場であったことが、御三家の末番に数えられることから見てとれる￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　御三家の中では比較的、弱い立場であったことが、御三家の末番に数えられることから見てとれる。",
+		   NULL, "Вони недарма останні в цьому переліку — з усіх трьох родів їхня позиція була найслабшою.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　もっとも、今日の園崎家は隆盛を極め、御三家内における立場は完全に逆転している＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もっとも、今日の園崎家は隆盛を極め、御三家内における立場は完全に逆転している。",
+		   NULL, "Однак сьогодні родина Сонодзакі процвітає, і їхнє становище як одного з Трьох Панівних Родів кардинально змінилося.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　今や雛見沢を牛耳っているとまで言えるだろう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今や雛見沢を牛耳っているとまで言えるだろう。",
+		   NULL, "Зараз можна навіть сказати, що вони управляють Хінамідзавою.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　御三家で合議することが名残となっているだけで、村内の取り決めは事実上、現当主の園崎お魎がひとりで決めていると言っていい￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　御三家で合議することが名残となっているだけで、村内の取り決めは事実上、現当主の園崎お魎がひとりで決めていると言っていい。",
+		   NULL, "Як і в старі часи, представники трьох великих родин проводять зустрічі та обговорення, але теперішня голова родини Сонодзакі, Орьо, фактично самостійно приймає рішення щодо усього, що відбувається в селі.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 1000 );
+	SetValidityOfInput( TRUE );
+
+
+}

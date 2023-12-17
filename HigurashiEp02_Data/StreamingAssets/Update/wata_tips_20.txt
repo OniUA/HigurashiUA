@@ -1,0 +1,218 @@
+void main()
+{
+
+//１０深■園崎家の老当主は？
+//（深夜の車中のイメージ）
+//*Sub_Tips_040
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	DrawScene("background/kuruma4", 1000 );
+	PlayBGM( 1, "msys13", 56, 0 );
+
+
+//「はい。郵便局員も目撃してないそうです＠...園崎本家は、郵便受けにハンコが吊るしてあるそうで、書留も宅急便も勝手にハンコを押して投函していい事になってるんだそうっす。＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Кумаґай</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100030", 256, TRUE);
+	OutputLine(NULL, "「はい。郵便局員も目撃してないそうです。",
+		   NULL, "\"Так. Поштар теж нічого не бачив.", Line_Continue);
+	OutputLine(NULL, "…園崎本家は、郵便受けにハンコが吊るしてあるそうで、書留も宅急便も勝手にハンコを押して投函していい事になってるんだそうっす。」",
+		   NULL, " На їхній поштовій скриньці висить печатка головного дому Сонодзакі, тож будь-хто може поставити її на своєму листі чи посилці і одразу ж відправити.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「なっはっは、そりゃ無用心ですねぇ＠...ってことは、最後の目撃はいつになるんです？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700154", 256, TRUE);
+	OutputLine(NULL, "「なっはっは、そりゃ無用心ですねぇ。",
+		   NULL, "\"На-ха-хa, це досить необережно з їхнього боку.", Line_Continue);
+	OutputLine(NULL, "…ってことは、最後の目撃はいつになるんです？」",
+		   NULL, " То коли її бачили востаннє?..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「綿流しの開会式でした挨拶が最後です＠その後すぐに帰宅したらしいっすから。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Кумаґай</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100031", 256, TRUE);
+	OutputLine(NULL, "「綿流しの開会式でした挨拶が最後です。",
+		   NULL, "\"Востаннє її бачили на церемонії відкриття фестивалю Ватанаґаші, вона виголошувала промову.", Line_Continue);
+	OutputLine(NULL, "その後すぐに帰宅したらしいっすから。」",
+		   NULL, " Скоріш за все, вона одразу після цього попрямувала додому.\"", Line_Normal);
+	ClearMessage();
+
+//「高齢ですからねぇ＠...話じゃ、週に何回かお稽古事で外出してるそうじゃないですか＠そっちはどうです？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700155", 256, TRUE);
+	OutputLine(NULL, "「高齢ですからねぇ。",
+		   NULL, "\"Ну, вона старенька жіночка.", Line_Continue);
+	OutputLine(NULL, "…話じゃ、週に何回かお稽古事で外出してるそうじゃないですか。",
+		   NULL, " Наскільки мені відомо, вона кілька разів на тиждень ходить на якісь заняття, так?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700156", 256, TRUE);
+	OutputLine(NULL, "そっちはどうです？」",
+		   NULL, " Дізналися щось про це?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「毎週月曜に集会所で大正琴を習ってるんですが、今週は休んだそうです。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Коміяма</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500008", 256, TRUE);
+	OutputLine(NULL, "「毎週月曜に集会所で大正琴を習ってるんですが、今週は休んだそうです。」",
+		   NULL, "\"Щопонеділка вона ходить до зали засідань, щоб попрактикувати гру на тайшьо-ґото, але цього тижня вона пропустила заняття.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「欠席の電話とかは＠　それを誰かが確認したとかは？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700157", 256, TRUE);
+	OutputLine(NULL, "「欠席の電話とかは？",
+		   NULL, "\"Комусь повідомляли про те, що вона не прийде?", Line_Continue);
+	OutputLine(NULL, "　それを誰かが確認したとかは？」",
+		   NULL, " Хтось підтвердив це?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「いえ、誰も＠ただ、たまに休むことがあったらしいので誰も不審には思わなかったようです。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Коміяма</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442500009", 256, TRUE);
+	OutputLine(NULL, "「いえ、誰も。",
+		   NULL, "\"Ні, ніхто.", Line_Continue);
+	OutputLine(NULL, "ただ、たまに休むことがあったらしいので誰も不審には思わなかったようです。」",
+		   NULL, " Вона, мабуть, час від часу бере вихідні, і тому ніхто не здивувався її відсутності.\"", Line_Normal);
+	ClearMessage();
+
+//「明日さ、１０時くらいになったら市役所のふりして電話してみましょうかね＠在宅を確認してみて下さい。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700158", 256, TRUE);
+	OutputLine(NULL, "「明日さ、１０時くらいになったら市役所のふりして電話してみましょうかね。",
+		   NULL, "\"Пропоную завтра о десятій подзвонити, представившись членами міської ради.", Line_Continue);
+	OutputLine(NULL, "在宅を確認してみて下さい。」",
+		   NULL, " З'ясуйте, чи вона вдома.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「１０時ですね。了解っす！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Кумаґай</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100032", 256, TRUE);
+	OutputLine(NULL, "「１０時ですね。了解っす！」",
+		   NULL, "\"Десята година? Зрозумів!\"", Line_Normal);
+	ClearMessage();
+
+//　雛見沢の古い因習が関わっている気配が濃厚になった頃から、御三家をこっそりと監視していた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢の古い因習が関わっている気配が濃厚になった頃から、御三家をこっそりと監視していた。",
+		   NULL, "Він пильно стежить за Трьома Родами відтоді, відколи в нього з'явилися підозри, що із цими дивними подіями пов'язані стародавні традиції Хінамідзави.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　今日までに御三家の公由家の当主と、古手家の当主が消えた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今日までに御三家の公由家の当主と、古手家の当主が消えた。",
+		   NULL, "Наразі лідери родин Кімійоші та Фуруде вважаються зниклими без вісти.", Line_Normal);
+	ClearMessage();
+
+//　残る当主は１人＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　残る当主は１人。",
+		   NULL, "З трьох великих лідерів залишився лише один.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　園崎家当主の園崎お魎。（そのざきおりょう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎家当主の園崎お魎。（そのざきおりょう）",
+		   NULL, "Орьо Сонодзакі — голова сім'ї Сонодзакі.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　高齢の婆さまらしい＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　高齢の婆さまらしい。",
+		   NULL, "Вже давно не молода жінка.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　威厳は衰えないものの、人前に姿を現すことは稀だそうで、確認がなかなか取れなかった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　威厳は衰えないものの、人前に姿を現すことは稀だそうで、確認がなかなか取れなかった。",
+		   NULL, "Пані Орьо досі не втратила гідність та гордість, але вона досить рідко з'являється на людях, тому відстежити місце її перебування важко.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　...その最後の当主も、綿流しの日に目撃されたのを最後に、誰からも目撃されていない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…その最後の当主も、綿流しの日に目撃されたのを最後に、誰からも目撃されていない。",
+		   NULL, "Її, останню лідерку, ніхто не бачив з дня фестивалю.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　園崎本家の中にいて今も健在なのか＠　...それとも......もう￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎本家の中にいて今も健在なのか？",
+		   NULL, "Вона все ще жива й неушкоджена, і перебуває в головному домі Сонодзакі?", Line_WaitForInput);
+	OutputLine(NULL, "　…それとも……もう？",
+		   NULL, " Чи вона...", Line_Normal);
+	ClearMessage();
+
+//「園崎魅音が言うには、体調を崩して寝込んでるんだそうです。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Кумаґай</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100033", 256, TRUE);
+	OutputLine(NULL, "「園崎魅音が言うには、体調を崩して寝込んでるんだそうです。」",
+		   NULL, "\"Якщо вірити Міон Сонодзакі, Орьо захворіла і зараз відсипається вдома.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「本当に寝込んでるのかなぁ＠顔と脈を見てみたいですねぇ...。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700159", 256, TRUE);
+	OutputLine(NULL, "「本当に寝込んでるのかなぁ。",
+		   NULL, "\"Цікаво, чи вона дійсно спить.", Line_Continue);
+	OutputLine(NULL, "顔と脈を見てみたいですねぇ…。」",
+		   NULL, " Не завадить подивитися на обличчя та перевірити пульс...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「..................まったくっす。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Кумаґай</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100034", 256, TRUE);
+	OutputLine(NULL, "「………………まったくっす。」",
+		   NULL, "\"І не кажіть...\"", Line_Normal);
+	ClearMessage();
+
+//　２人してタバコの煙を大きく吐き出す...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　２人してタバコの煙を大きく吐き出す…。",
+		   NULL, "Вони обидва видихнули велику хмарку цигаркового диму...", Line_Normal);
+	ClearMessage();
+
+//「大石さん、...園崎本家と古手神社の捜査令状＠申請、通ると思います？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Кумаґай</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100035", 256, TRUE);
+	OutputLine(NULL, "「大石さん、…園崎本家と古手神社の捜査令状。",
+		   NULL, "\"Пане Оойші... Щодо ордерів на обшук головного дому Сонодзакі і храму Фуруде.", Line_Continue);
+	OutputLine(NULL, "申請、通ると思います？」",
+		   NULL, " Як думаєте, нам їх видадуть?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　大石は特に答えず、再び紫煙を吐き出して、文字通り煙に巻いていた...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石は特に答えず、再び紫煙を吐き出して、文字通り煙に巻いていた…。",
+		   NULL, "Оойші не відповів. Лише видихнув ще одну хмарку диму — такого ж важкого, як і його задумливий погляд...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 1000 );
+	SetValidityOfInput( TRUE );
+
+}

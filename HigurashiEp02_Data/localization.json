@@ -1,0 +1,880 @@
+{
+    "allChapters": {
+        "CultureInfo": {
+            "textEN": null,
+            "text": "uk-UA",
+            "comment": "The 'text' field sets the time format for the save file string, for example 'fr-FR' for French. See https://github.com/07th-mod/higurashi-assembly/issues/109 for more details. Leave as 'null' for the default setting (CultureInfo.CurrentCulture).",
+            "TextEN": "uk-UA"
+        },
+        "DateTimeFormat": {
+            "textEN": "ddd MMM dd, yyyy h:mm tt",
+            "text": "ddd dd MMM, yyyy h:mm tt",
+            "comment": "The 'text' field sets the date time format, for example 'ddd MMM dd, yyyy h:mm tt'. See https://github.com/07th-mod/higurashi-assembly/issues/109 for more details. Leave as 'null' for the default setting",
+            "TextEN": "ddd dd MMM, yyyy h:mm tt"
+        },
+        "ExampleEntry": {
+            "TextEN": "This text will displayed by default.",
+            "text": "Цей текст відображатиметься за замовчуванням.",
+            "textJP": "This text will be displayed when the language is changed to Japanese in-game.",
+            "comment": "You can store comments here. Additionally, if any field is left empty and there is no hard-coded fallback, it will display as #NOT SET#"
+        },
+        "MODMenu_0": {
+            "comment": "The below entries are for the F10 mod menu, in the file MOD.Scripts.UI/MODMenu.cs. NOTE: some of these are the debug menu strings, wich the user will never use or see.",
+            "text": "[Відстеження аудіо] - показує, який BGM грає",
+            "TextEN": "[Audio Tracking] - indicates what would play on each BGM flow"
+        },
+        "MODMenu_1": {
+            "text": "[Прапори аудіо та останній відтворений аудіофайл]",
+            "TextEN": "[Audio Flags and last played audio]"
+        },
+        "MODMenu_2": {
+            "text": "Скинути GAudioSet",
+            "TextEN": "Reset GAudioSet"
+        },
+        "MODMenu_3": {
+            "text": "Встановити для GAudioSet значення 0, аби гра примусово провела налаштування аудіо під час наступного запуску",
+            "TextEN": "Set GAudioSet to 0, to force the game to do audio setup on next startup"
+        },
+        "MODMenu_4": {
+            "text": "Закрити",
+            "TextEN": "Close"
+        },
+        "MODMenu_5": {
+            "text": "Закрити меню відлагодження",
+            "TextEN": "Close the debug menu"
+        },
+        "MODMenu_6": {
+            "text": "Вікно відлагодження для розробників (натисніть, щоб перетягнути)",
+            "TextEN": "Developer Debug Window (click to drag)"
+        },
+        "MODMenu_7": {
+            "text": "Меню модифікації\n(Гаряча клавіша: F10)",
+            "TextEN": "Mod Menu\n(Hotkey: F10)"
+        },
+        "MODMenu_8": {
+            "text": "Детальніше про BGM",
+            "TextEN": "BGM Info"
+        },
+        "MODMenu_9": {
+            "text": "Копіювати назву BGM",
+            "TextEN": "Copy BGM Name"
+        },
+        "MODMenu_10": {
+            "text": "Показати файл",
+            "TextEN": "Show File"
+        },
+        "MODMenu_11": {
+            "text": "Відкрити на YouTube",
+            "TextEN": "Open In Youtube"
+        },
+        "MODMenu_12": {
+            "text": "Примітка: Якщо Файловий провідник зависає,\nдеінсталюйте Web Media Extensions",
+            "TextEN": "Note: If explorer freezes\nuninstall Web Media Extensions"
+        },
+        "MODMenu_13": {
+            "text": "X",
+            "TextEN": "X"
+        },
+        "MODMenu_14": {
+            "text": "Закрити меню модифікації",
+            "TextEN": "Close the Mod menu"
+        },
+        "MODMenu_15": {
+            "text": "Закрийте поточне меню і спробуйте ще раз",
+            "TextEN": "Please close the current menu and try again"
+        },
+        "MODMenu_16": {
+            "text": "Схоже, під час запуску виникла проблема\n\nНадішліть розробникам файл логу (output_log.txt чи Player.log).\n\nТакож для вирішення проблеми ви самостійно можете спробувати виконати наступні дії.\n  1. Зачекайте 30 секунд. Якщо нічого не зміниться, спробуйте перезапустити гру\n\n  2. У пункті \"Усунення несправностей\" внизу зліва натисніть відповідну кнопку для відображення файлів збереження, логів та компільованих скриптів.\n\n  3. Якщо у файлі логу вказано на наявність пошкоджених файлів збереження, ви можете спробувати видалити пошкоджений файл (файли).\n\n  4. Ви можете спробувати видалити файли компільованих скриптів; після видалення перезапустіть гру.\n\n  5. Якщо проблема не була вирішена, натисніть на кнопку \"Відкрити сторінку підтримки\": на цій сторінці ви знайдете додаткову інформацію щодо усунення несправностей та посилання на наш сервер Discord, де ви зможете звернутися до нас напряму.",
+            "TextEN": "It looks like there was a problem starting up\n\nPlease send the developers your log file (output_log.txt or Player.log).\n\nYou can try the following yourself to fix the issue.\n  1. Try waiting 30 seconds for the game to progress. If nothing happens, try restarting the game\n\n  2. Use the buttons under 'Troubleshooting' on the bottom left to show your save files, log files, and compiled scripts.\n\n  3. If the log indicates you have corrupt save files, you may wish to delete the offending save file (or all of them).\n\n  4. You can try to clear your compiled script files, then restart the game.\n\n  5. If the above do not fix the problem, please click the 'Open Support Page' button, which has extra troubleshooting info and links to join our Discord server for direct support."
+        },
+        "MODMenuNormal_0": {
+            "comment": "The below entries are for the F10 mod menu, in the file MOD.Scripts.UI/MODMenuNormal.cs",
+            "text": "Синхронізація губ для консольних спрайтів (Гаряча клавіша: 7)",
+            "TextEN": "Lip Sync for Console Sprites (Hotkey: 7)"
+        },
+        "MODMenuNormal_1": {
+            "text": "Синхронізація губ (ПРИМІТКА: Для увімкнення виберіть спрайти \"Консольні\" або пресет \"Консольний\")",
+            "TextEN": "Lip Sync (NOTE: Select 'Console' sprites or preset to enable)"
+        },
+        "MODMenuNormal_2": {
+            "text": "Консольні",
+            "TextEN": "Console"
+        },
+        "MODMenuNormal_3": {
+            "text": "Використовувати консольні спрайти",
+            "TextEN": "Use the Console sprites"
+        },
+        "MODMenuNormal_4": {
+            "text": "MangaGamer",
+            "TextEN": "MangaGamer"
+        },
+        "MODMenuNormal_5": {
+            "text": "Використовувати спрайти з ремейку Mangagamer",
+            "TextEN": "Use Mangagamer's remake sprites"
+        },
+        "MODMenuNormal_6": {
+            "text": "Оригінальні",
+            "TextEN": "Original"
+        },
+        "MODMenuNormal_7": {
+            "text": "Використовувати оригінальні спрайти Ryukishi07",
+            "TextEN": "Use Original/Ryukishi sprites"
+        },
+        "MODMenuNormal_8": {
+            "text": "Рівень цензури (Гаряча клавіша: F2)",
+            "TextEN": "Voice Matching Level (Hotkey: F2)"
+        },
+        "MODMenuNormal_9": {
+            "text": "Рівень цензури 0 - Як у версії для PC",
+            "TextEN": "Censorship level 0 - Equivalent to PC"
+        },
+        "MODMenuNormal_10": {
+            "text": "Рівень цензури 1",
+            "TextEN": "Censorship level 1"
+        },
+        "MODMenuNormal_11": {
+            "text": "Рівень цензури 2 (за замовчуванням/рекомендується)",
+            "TextEN": "Censorship level 2 (this is the default/recommended value)"
+        },
+        "MODMenuNormal_12": {
+            "text": "Рівень цензури 3",
+            "TextEN": "Censorship level 3"
+        },
+        "MODMenuNormal_13": {
+            "text": "Рівень цензури 4",
+            "TextEN": "Censorship level 4"
+        },
+        "MODMenuNormal_14": {
+            "text": "Рівень цензури 5 - Як у версії для консолі",
+            "TextEN": "Censorship level 5 - Equivalent to Console"
+        },
+        "MODMenuNormal_15": {
+            "text": "Вимкнути синхронізацію губ",
+            "TextEN": "Lip Sync Off"
+        },
+        "MODMenuNormal_16": {
+            "text": "Вимикає синхронізацію губ для консольних спрайтів",
+            "TextEN": "Disables Lip Sync for Console Sprites"
+        },
+        "MODMenuNormal_17": {
+            "text": "Увімкнути синхронізацію губ",
+            "TextEN": "Lip Sync On"
+        },
+        "MODMenuNormal_18": {
+            "text": "Вмикає синхронізацію губ для консольних спрайтів",
+            "TextEN": "Enables Lip Sync for Console Sprites"
+        },
+        "MODMenuNormal_19": {
+            "text": "Синхронізація губ вимкнена (неактивно)",
+            "TextEN": "Lip Sync Off (Inactive)"
+        },
+        "MODMenuNormal_20": {
+            "text": "Прибирає синхронізацію губ для консольних спрайтів\n\nПРИМІТКА: Синхронізація рухів губ доступна тільки для консольних спрайтів - виберіть спрайти \"Консольні\" або пресет \"Консольний\"",
+            "TextEN": "Disables Lip Sync for Console Sprites\n\nNOTE: Lip Sync only works with Console sprites - please select 'Console' preset or sprites"
+        },
+        "MODMenuNormal_21": {
+            "text": "Синхронізація губ увімкнена (неактивно)",
+            "TextEN": "Lip Sync On (Inactive)"
+        },
+        "MODMenuNormal_22": {
+            "text": "Додає синхронізацію губ для консольних спрайтів\n\nПРИМІТКА: Синхронізація рухів губ доступна тільки для консольних спрайтів - виберіть спрайти \"Консольні\" або пресет \"Консольний\"",
+            "TextEN": "Enables Lip Sync for Console Sprites\n\nNOTE: Lip Sync only works with Console sprites - please select 'Console' preset or sprites"
+        },
+        "MODMenuNormal_23": {
+            "text": "Опенінги (Гарячі клавіші: Shift+F12)",
+            "TextEN": "Opening Movies (Hotkey: Shift-F12)"
+        },
+        "MODMenuNormal_24": {
+            "text": "Вимкнено",
+            "TextEN": "Disabled"
+        },
+        "MODMenuNormal_25": {
+            "text": "Вимикає всі опенінги",
+            "TextEN": "Disables all opening videos"
+        },
+        "MODMenuNormal_26": {
+            "text": "Увімкнено",
+            "TextEN": "Enabled"
+        },
+        "MODMenuNormal_27": {
+            "text": "Вмикає відтворення опенінгів (вступних відео)\n\nПРИМІТКА: Після першого відтворення опенінгу буде автоматично вибрано опцію \"Запуск + У грі\"\n\nМи налаштували це таким чином, аби ви могли уникнути спойлерів.",
+            "TextEN": "Enables opening videos\n\nNOTE: Once the opening video plays the first time, will automatically switch to 'Launch + In-Game'\n\nWe have setup openings this way to avoid spoilers."
+        },
+        "MODMenuNormal_28": {
+            "text": "Запуск + У грі",
+            "TextEN": "Launch + In-Game"
+        },
+        "MODMenuNormal_29": {
+            "text": "УВАГА: Зазвичай немає потреби натискати це вручну.\n\nЯкщо відтворення опенінгів увімкнено, після першого відтворення відео у грі цю опцію буде обрано автоматично\n\nТаким чином, після першого відтворення у грі опенінги надалі програватимуться під час кожного наступного запуску",
+            "TextEN": "WARNING: There is usually no need to set this manually.\n\nIf openings are enabled, the first time you reach an opening while playing the game, this flag will be set automatically\n\nThat is, after the opening is played the first time, from then on openings will play every time the game launches"
+        },
+        "MODMenuNormal_30": {
+            "text": "Показати/Приховати CG",
+            "TextEN": "Show/Hide CGs"
+        },
+        "MODMenuNormal_31": {
+            "text": "Показати CG",
+            "TextEN": "Show CGs"
+        },
+        "MODMenuNormal_32": {
+            "text": "Показує CG (Ймовірно, ви захочете увімкнути цю опцію для консольного режиму ADV/NVL)",
+            "TextEN": "Shows CGs (You probably want this enabled for Console ADV/NVL mode)"
+        },
+        "MODMenuNormal_33": {
+            "text": "Приховати CG",
+            "TextEN": "Hide CGs"
+        },
+        "MODMenuNormal_34": {
+            "text": "Вимикає всі CG (призначено для застосування із пресетом \"Оригінальний від Ryukishi07\")",
+            "TextEN": "Disables all CGs (mainly for use with the Original/Ryukishi preset)"
+        },
+        "MODMenuNormal_35": {
+            "text": "Стиль фонових зображень",
+            "TextEN": "Background Style"
+        },
+        "MODMenuNormal_36": {
+            "text": "Консольні BG",
+            "TextEN": "Console BGs"
+        },
+        "MODMenuNormal_37": {
+            "text": "Використовувати фонові зображення з консольної версії",
+            "TextEN": "Use Console backgrounds"
+        },
+        "MODMenuNormal_38": {
+            "text": "Оригінальні BG",
+            "TextEN": "Original BGs"
+        },
+        "MODMenuNormal_39": {
+            "text": "Використовувати фонові зображення з оригінальної версії від Ryukishi07",
+            "TextEN": "Use Original/Ryukishi backgrounds."
+        },
+        "MODMenuNormal_40": {
+            "text": "Розтягування фонових зображень",
+            "TextEN": "Background Stretching"
+        },
+        "MODMenuNormal_41": {
+            "text": "Без розтягування BG",
+            "TextEN": "BG Stretching Off"
+        },
+        "MODMenuNormal_42": {
+            "text": "Робить фонові зображення максимально великими без розтягування (зі збереженням співвідношення сторін)",
+            "TextEN": "Makes backgrounds as big as possible without any stretching (Keep Aspect Ratio)"
+        },
+        "MODMenuNormal_43": {
+            "text": "З розтягуванням BG",
+            "TextEN": "BG Stretching On"
+        },
+        "MODMenuNormal_44": {
+            "text": "Розтягує фонові зображення до розмірів екрана (ігноруючи співвідношення сторін)\n\nДля використання з оригінальними фонами, співвідношення сторін у яких складає 4:3.",
+            "TextEN": "Stretches backgrounds to fit the screen (Ignore Aspect Ratio)\n\nMainly for use with the Original BGs, which are in 4:3 aspect ratio."
+        },
+        "MODMenuNormal_45": {
+            "text": "Стиль спрайтів",
+            "TextEN": "Sprite Style"
+        },
+        "MODMenuNormal_46": {
+            "text": "Вигляд вікна з текстом",
+            "TextEN": "Text Window Appearance"
+        },
+        "MODMenuNormal_47": {
+            "text": "Режим ADV",
+            "TextEN": "ADV Mode"
+        },
+        "MODMenuNormal_48": {
+            "text": "Особливості режиму:\n- Текст відображається внизу екрана, в текстбоксі\n- Ім'я персонажа, що говорить, відображається над текстбоксом\n",
+            "TextEN": "This option:\n- Makes text show at the bottom of the screen in a textbox\n- Shows the name of the current character on the textbox\n"
+        },
+        "MODMenuNormal_49": {
+            "text": "Режим NVL",
+            "TextEN": "NVL Mode"
+        },
+        "MODMenuNormal_50": {
+            "text": "Особливості режиму:\n- Текст відображається на весь екран\n",
+            "TextEN": "This option:\n- Makes text show across the whole screen\n"
+        },
+        "MODMenuNormal_51": {
+            "text": "Як в оригіналі",
+            "TextEN": "Original"
+        },
+        "MODMenuNormal_52": {
+            "text": "Особливості режиму:\n- Екран затемнений, як в оригінальній версії гри\n- Текст відображається тільки на частині екрана, зі співвідношенням 4:3 (виглядає вужче, ніж у режимі NVL)\n",
+            "TextEN": "This option:\n- Darkens the whole screen to emulate the original game\n- Makes text show only in a 4:3 section of the screen (narrower than NVL mode)\n"
+        },
+        "MODMenuNormal_53": {
+            "text": "Примусове обчислення синхронізації губ",
+            "TextEN": "Force Computed Lipsync"
+        },
+        "MODMenuNormal_54": {
+            "text": "Як резервний варіант",
+            "TextEN": "As Fallback"
+        },
+        "MODMenuNormal_55": {
+            "text": "Використовувати тільки у випадку відсутності файлу типу \"spectrum\" відповідно файлу .ogg",
+            "TextEN": "Only use computed lipsync if there is no baked 'spectrum' file for a given .ogg file"
+        },
+        "MODMenuNormal_56": {
+            "text": "Завжди обчислювати",
+            "TextEN": "Computed Always"
+        },
+        "MODMenuNormal_57": {
+            "text": "Завжди використовувати примусове обчислення. Усі файли типу \"spectrum\" будуть ігноруватися.",
+            "TextEN": "Always use computed lipsync for all voices. Any 'spectrum' files will be ignored."
+        },
+        "MODMenuNormal_58": {
+            "text": "Ігролад",
+            "TextEN": "Gameplay"
+        },
+        "MODMenuNormal_59": {
+            "text": "Цензура та опенінги",
+            "TextEN": "Voice Matching and Opening Videos"
+        },
+        "MODMenuNormal_60": {
+            "text": "Візуал",
+            "TextEN": "Graphics"
+        },
+        "MODMenuNormal_61": {
+            "text": "Спрайти, фонові зображення, CG, роздільна здатність",
+            "TextEN": "Sprites, Backgrounds, CGs, Resolution"
+        },
+        "MODMenuNormal_62": {
+            "text": "Аудіо",
+            "TextEN": "Audio"
+        },
+        "MODMenuNormal_63": {
+            "text": "Варіанти BGM та SE",
+            "TextEN": "BGM and SE options"
+        },
+        "MODMenuNormal_64": {
+            "text": "Відлагодження",
+            "TextEN": "Troubleshooting"
+        },
+        "MODMenuNormal_65": {
+            "text": "Інструменти, які можуть стати в нагоді, якщо щось працюватиме не так, як слід",
+            "TextEN": "Tools to help you if something goes wrong"
+        },
+        "MODMenuNormal_66": {
+            "text": "4:3 (експериментальне співвідношення сторін оригіналу від Ryukishi07)",
+            "TextEN": "Original/Ryukishi Experimental 4:3 Aspect Ratio"
+        },
+        "MODMenuNormal_67": {
+            "text": "16:9 (за замовчуванням)",
+            "TextEN": "16:9 (default)"
+        },
+        "MODMenuNormal_68": {
+            "text": "Для гри буде встановлено співвідношення сторін 16:9.\n\nЯкщо ви граєте в режимі оригіналу, екран буде обрізаний чорними полосами ліворуч та праворуч до співвідношення 4:3.",
+            "TextEN": "The game's aspect ratio will be 16:9.\n\nWhen playing in OG mode, the left and right of the screen will be padded to 4:3 with black bars."
+        },
+        "MODMenuNormal_69": {
+            "text": "Для гри буде встановлено співвідношення сторін 4:3, але якщо ви граєте з нашою модифікацією, це може спричинити помилки.\nВикористовуйте цю опцію тільки якщо ваш монітор має співвідношення сторін 4:3 (як старі CRT-монітори).\n\nЗверніть увагу:\n\n - Перед вибором цієї опції встановіть пресет \"Оригінальний від Ryukishi07\". Інші пресети технічно мають працювати, але це не гарантовано.\n\n - Зображення зі співвідношенням 16:9 будуть стиснуті до 4:3, щоб не виглядати обрізаними. Це стосується і зображень із текстом, і CG з версії для PS3 (якщо обрано такий варіант).\n\n - Одразу після вибору цієї опції можуть з'явитися артефакти - вони мають зникнути після появи на екрані іншого персонажа чи після початку нової сторінки тексту\n\n",
+            "TextEN": "The game's aspect ratio will be 4:3, however this may cause some issues when playing our mod.\nOnly use this option if your monitor is 4:3 aspect ratio, like an old CRT monitor.\n\nPlease note the following:\n\n - You should enable the Original/Ryukishi preset before enabling this option. Using other settings should all work, but are not well tested.\n\n - 16:9 images will be squished to fit in 4:3 so they don't get cut off. This includes text images, and PS3 CG images if enabled.\n\n - You may see graphical artifacts just after this is enabled - they should fix after the next character transition or text clear\n\n"
+        },
+        "MODMenuNormal_70": {
+            "text": "Графічні пресети (Гаряча клавіша: F1)",
+            "TextEN": "Graphics Presets (Hotkey: F1)"
+        },
+        "MODMenuNormal_71": {
+            "text": "Консольний",
+            "TextEN": "Console"
+        },
+        "MODMenuNormal_72": {
+            "text": "Особливості пресету:\n- Текст відображається внизу екрана, в текстбоксі\n- Ім'я персонажа, що говорить, відображається над текстбоксом\n- Використовуються консольні спрайти (із синхронізацією рухів губ) та консольні фонові зображення\n- Широкоекранне співвідношення сторін 16:9\n\nСтиль спрайтів та фонових зображень можна змінити вручну, якщо для них є варіанти: це можна зробити через кнопки \"Вибрати стиль\" та \"Змінити стиль фонів вручну\" в пункті \"Розширені налаштування\"",
+            "TextEN": "This preset:\n- Makes text show at the bottom of the screen in a textbox\n- Shows the name of the current character on the textbox\n- Uses the console sprites (with lipsync) and console backgrounds\n- Displays in 16:9 widescreen\n\nNote that sprites and backgrounds can be overridden by setting the 'Choose Art Set' & 'Override Art Set Backgrounds' options under 'Advanced Options', if available"
+        },
+        "MODMenuNormal_73": {
+            "text": "MangaGamer",
+            "TextEN": "MangaGamer"
+        },
+        "MODMenuNormal_74": {
+            "text": "Особливості пресету:\n- Текст відображається на весь екран\n- Використовуються спрайти з ремейку Mangagamer та консольні фонові зображення\n- Широкоекранне співвідношення сторін 16:9\n\nСтиль спрайтів та фонових зображень можна змінити вручну, якщо для них є варіанти: це можна зробити через кнопки \"Вибрати стиль\" та \"Змінити стиль фонів вручну\" в пункті \"Розширені налаштування\"",
+            "TextEN": "This preset:\n- Makes text show across the whole screen\n- Uses the Mangagamer remake sprites and Console backgrounds\n- Displays in 16:9 widescreen\n\nNote that sprites and backgrounds can be overridden by setting the 'Choose Art Set' & 'Override Art Set Backgrounds' options under 'Advanced Options', if available"
+        },
+        "MODMenuNormal_75": {
+            "text": "Оригінальні(Ryukishi07)",
+            "TextEN": "Original/Ryukishi"
+        },
+        "MODMenuNormal_76": {
+            "text": "Гра виглядає як в оригіналі без модифікації:\n- Фонові зображення відображаються зі \"стандартним\" співвідношенням сторін 4:3\n- Відображення CG вимкнено (можна увімкнути вручну, див. \"Показати/Приховати\")\n- Використовуються оригінальні спрайти та фони\n\nСтиль спрайтів та фонових зображень, а також відображення CG можна змінити вручну, якщо для них є варіанти: це можна зробити через кнопки \"Вибрати стиль\" та \"Змінити стиль фонів вручну\" в пункті \"Розширені налаштування\"",
+            "TextEN": "This preset makes the game behave similarly to the unmodded game:\n- Displays backgrounds in 4:3 'standard' aspect\n- CGs are disabled (Can be re-enabled, see 'Show/Hide CGs')\n- Switches to original sprites and backgrounds\n\nNote that sprites, backgrounds, and CG hiding can be overridden by setting the 'Choose Art Set' & 'Override Art Set Backgrounds' options under 'Advanced Options', if available"
+        },
+        "MODMenuNormal_77": {
+            "text": "Користувацький",
+            "TextEN": "Custom"
+        },
+        "MODMenuNormal_78": {
+            "text": "Ви можете створити власний пресет, використовуючи опції нижче.\n\nЦей пресет буде збережено, навіть якщо ви переключитесь на інший пресет.",
+            "TextEN": "Your own custom preset, using the options below.\n\nThis custom preset will be saved, even when you switch to the other presets."
+        },
+        "MODMenuNormal_79": {
+            "text": "Розширені налаштування",
+            "TextEN": "Advanced Options"
+        },
+        "MODMenuNormal_80": {
+            "text": "УВАГА: У вас вибрано режим ADV, але для цього сегменту примусово встановлено режим NVL, тому гра тимчасово відображатиметься в режимі NVL!",
+            "TextEN": "WARNING: You have ADV mode enabled, but you are in a forced-NVL section, so the game will display in NVL mode temporarily!"
+        },
+        "MODMenuNormal_81": {
+            "text": "Роздільна здатність",
+            "TextEN": "Resolution"
+        },
+        "MODMenuNormal_82": {
+            "text": "Розширені налаштування",
+            "TextEN": "Advanced Options"
+        },
+        "MODMenuNormal_83": {
+            "text": "Експериментальні інструменти",
+            "TextEN": "Experimental Gameplay Tools"
+        },
+        "MODMenuNormal_84": {
+            "text": "Примусове розблокування гри!",
+            "TextEN": "Game Clear Forced!"
+        },
+        "MODMenuNormal_85": {
+            "text": "Прогрес скинуто!",
+            "TextEN": "All Progress Reset!"
+        },
+        "MODMenuNormal_86": {
+            "text": "Перезавантажте меню/гру!",
+            "TextEN": "Please reload menu/game!"
+        },
+        "MODMenuNormal_87": {
+            "text": "Скинути прогрес",
+            "TextEN": "Reset All Progress"
+        },
+        "MODMenuNormal_88": {
+            "text": "Примусово розблокувати гру",
+            "TextEN": "Force Game Clear"
+        },
+        "MODMenuNormal_89": {
+            "text": "Натисніть ще ",
+            "TextEN": "Click"
+        },
+        "MODMenuNormal_90": {
+            "text": " раз(и)",
+            "TextEN": "more times"
+        },
+        "MODMenuNormal_91": {
+            "text": "УВАГА: За допомогою цієї опції ви можете змінити статус проходження гри:\n - Якщо ви ще не пройшли гру до кінця, ця опція розблокує увесь контент.\n - Якщо ви вже пройшли гру до кінця, це скине увесь прогрес!\n\nТак ви можете розблокувати меню бонусів, усі підказки, та усі переходи між розділами.\n\nДля того, щоб побачити зміни, може знадобитися перезавантажити поточне меню або перезапустити гру.\n\nНа файли збереження ця опція не має вплинути.",
+            "TextEN": "WARNING: This option will toggle your game clear status:\n - If you haven't finished the game, it will unlock everything.\n - If you have already finished the game, it will reset all your progress!\n\nThis toggles the EXTRAS menu, including all TIPS, and all chapter jump chapters.\n\nYou may need to reload the current menu or restart the game before you can see the changes.\n\nSaves shouldn't be affected."
+        },
+        "MODMenuNormal_92": {
+            "text": "Ні",
+            "TextEN": "No"
+        },
+        "MODMenuNormal_93": {
+            "text": "Так",
+            "TextEN": "Yes"
+        },
+        "MODMenuNormal_94": {
+            "text": "Гру пройдено?: ",
+            "TextEN": "Game Cleared?: "
+        },
+        "MODMenuNormal_95": {
+            "text": "Останній розділ: ",
+            "TextEN": "Highest Chapter: "
+        },
+        "MODMenuNormal_96": {
+            "text": "Інструменти відлагодження",
+            "TextEN": "Developer Tools"
+        },
+        "MODMenuNormal_97": {
+            "text": "Меню відлагодження",
+            "TextEN": "Developer Debug Menu"
+        },
+        "MODMenuNormal_98": {
+            "text": "Меню відлагодження (Shift-F9)",
+            "TextEN": "Toggle debug menu (Shift-F9)"
+        },
+        "MODMenuNormal_99": {
+            "text": "Увімкнути/вимкнути меню відлагодження",
+            "TextEN": "Toggle the debug menu"
+        },
+        "MODMenuNormal_100": {
+            "text": "Меню прапорів (Shift-F10)",
+            "TextEN": "Toggle flag menu (Shift-F10)"
+        },
+        "MODMenuNormal_101": {
+            "text": "Увімкнути/вимкнути меню прапорів. Клікніть кілька разів, щоб відкрити більше параметрів.\n\nПримітка: Панелі 3 та 4 відображаються тільки коли GMOD_DEBUG_MODE = true.",
+            "TextEN": "Toggle the flag menu. Toggle Multiple times for more options.\n\nNote: 3rd and 4th panels are only shown if GMOD_DEBUG_MODE is true."
+        },
+        "MODMenuNormal_102": {
+            "text": "Показати інструменти для розробників",
+            "TextEN": "Show Developer Tools: Only click if asked by developers"
+        },
+        "MODMenuNormal_103": {
+            "text": "Показати інструменти для розробників.\n\nНатисніть, якщо вас попросили розробники.",
+            "TextEN": "Show the Developer Tools.\n\nOnly click this button if you're asked to by the developers."
+        },
+        "MODMenuNormal_104": {
+            "text": "Прапори розблокування",
+            "TextEN": "Flag Unlocks"
+        },
+        "MODMenuNormal_105": {
+            "text": "Задати GFlag_GameClear = ",
+            "TextEN": "Toggle GFlag_GameClear is "
+        },
+        "MODMenuNormal_106": {
+            "text": "Активувати прапор \"GFlag_GameClear\", який зазвичай активується після проходження гри. Розблокує додатковий матеріал - наприклад, \"Засідання акторів\".",
+            "TextEN": "Toggle the 'GFlag_GameClear' flag which is normally activated when you complete the game. Unlocks things like the All-cast review."
+        },
+        "MODMenuNormal_107": {
+            "text": "Задати GHighestChapter 0 <-> 999 | = ",
+            "TextEN": "Toggle GHighestChapter 0 <-> 999 | Is "
+        },
+        "MODMenuNormal_108": {
+            "text": "Активувати прапор \"GHighestChapter\", який показує, до якого розділу ви пройшли гру.\n\nЯкщо значення >= 1, розблокується меню бонусів.\nТакож розблокує інший додатковий матеріал - наприклад, розділи, які мають відображатися в меню переходів між розділами і т. д.",
+            "TextEN": "Toggle the 'GHighestChapter' flag which indicates the highest chapter you have completed.\n\nWhen >= 1, unlocks the extras menu.\nAlso unlocks other things like which chapters are shown on the chapter jump menu, etc."
+        },
+        "MODMenuNormal_109": {
+            "text": "Потрібен перезапуск",
+            "TextEN": "Restart Pending"
+        },
+        "MODMenuNormal_110": {
+            "text": "Відновити налаштування",
+            "TextEN": "Restore Settings"
+        },
+        "MODMenuNormal_111": {
+            "text": "ADV за замовчуванням",
+            "TextEN": "ADV defaults"
+        },
+        "MODMenuNormal_112": {
+            "text": "Відновлює для прапорів значення режиму ADV за замовчуванням\nПРИМІТКА: Аби зміни набрали чинності, гру потрібно буде перезапустити двічі",
+            "TextEN": "This restores flags to the defaults for NVL mode\nNOTE: Requires you to relaunch the game 2 times to come into effect"
+        },
+        "MODMenuNormal_113": {
+            "text": "NVL за замовчуванням",
+            "TextEN": "NVL defaults"
+        },
+        "MODMenuNormal_114": {
+            "text": "Відновлює для прапорів значення режиму NVL за замовчуванням\nПРИМІТКА: Аби зміни набрали чинності, гру потрібно буде перезапустити двічі",
+            "TextEN": "This restores flags to the defaults for NVL mode\nNOTE: Requires you to relaunch the game 2 times to come into effect"
+        },
+        "MODMenuNormal_115": {
+            "text": "Всі за замовчуванням",
+            "TextEN": "Vanilla Defaults"
+        },
+        "MODMenuNormal_116": {
+            "text": "Налаштування скидаються до тих, які встановлені для гри без модифікації.\nПРИМІТКА: Аби зміни набрали чинності, гру потрібно перезапустити. Після цього деінсталюйте мод.",
+            "TextEN": "This restores flags to the same settings as the unmodded game.\nNOTE: Requires a relaunch to come into effect. After this, uninstall the mod."
+        },
+        "MODMenuNormal_117": {
+            "text": "Скасувати заплановане скидання",
+            "TextEN": "Cancel Pending Restore"
+        },
+        "MODMenuNormal_118": {
+            "text": "Натисніть сюди, аби скасувати скидання до значень за замовчуванням під час наступного запуску гри",
+            "TextEN": "Click this to stop restoring defaults on next game launch"
+        },
+        "MODMenuNormal_119": {
+            "text": "Параметри обчислення синхронізації губ",
+            "TextEN": "Computed Lipsync Options"
+        },
+        "MODMenuNormal_120": {
+            "text": "Поріг синхронізації 1: ",
+            "TextEN": "LipSync Thresh 1: "
+        },
+        "MODMenuNormal_121": {
+            "text": "Якщо буде перевищено цей поріг, буде використовуватися вираз 1.\n\nЯкщо значення буде нижчим за цей поріг або дорівнювати йому, буде використовуватися вираз 0.\n\nЗберігається до наступного перезапуску гри",
+            "TextEN": "Above this threshold, expression 1 will be used.\n\nBelow or equal to this threshold, expression 0 will be used.\n\nOnly saved until the game restarts"
+        },
+        "MODMenuNormal_122": {
+            "text": "Поріг синхронізації 2: ",
+            "TextEN": "LipSync Thresh 2: "
+        },
+        "MODMenuNormal_123": {
+            "text": "Якщо буде перевищено цей поріг, буде використовуватися вираз 2\n\nЗберігається до наступного перезапуску гри",
+            "TextEN": "Above this thireshold, expression 2 will be used\n\nOnly saved until the game restarts"
+        },
+        "MODMenuNormal_124": {
+            "text": "Встановити",
+            "TextEN": "Set"
+        },
+        "MODMenuNormal_125": {
+            "text": "Спробувати встановити вибрані порогові значення для синхронізації губ\n\n",
+            "TextEN": "Tries to set the given lipsync thresholds\n\n"
+        },
+        "MODMenuNormal_126": {
+            "text": "Некоректно вказані пороги - кожен поріг повинен мати значення між 0 та 1",
+            "TextEN": "Invalid thresholds - each threshold should be a value between 0 and 1"
+        },
+        "MODMenuNormal_127": {
+            "text": "Меню налаштувань модифікації",
+            "TextEN": "Mod Options Menu"
+        },
+        "MODMenuNormal_128": {
+            "text": "\n\nВстановлює рівень цензури для тексту\n- Ми додали цей параметр, тому що озвучення для всіх розділів було отримано з їхніх консольних, цензурованих версій. У деяких нецензурованих реплік з ПК-версії тексту може бути відсутнє озвучення.\n- Ми рекомендуємо рівень за замовчуванням (2) як найбільш збалансований варіант. При використанні цього варіанту будуть змінені лише назви з авторськими правами, підтексти та деякі поодинокі слова.\n  - 5: Повністю озвучений текст з PS3 (найбільш цензурований)\n  - 2: За замовчуванням - найбільш збалансований варіант\n  - 0: Оригінальний текст як у версії для ПК (повністю без цензури): репліки озвучуються, якщо їхнє озвучення було наявне в консольній версії, а в нецензурованих сценах озвучення може бути відсутнє",
+            "TextEN": "\n\nSets the script censorship level\n- This setting exists because the voices are taken from the censored, Console versions of the game, so no voices exist for the PC uncensored dialogue.\n- We recommend the default level (2), the most balanced option. Using this option, only copyright changes, innuendos, and a few words will be changed.\n  - 5: Full PS3 script fully voiced (most censored)\n  - 2: Default - most balanced option\n  - 0: Original PC Script with voices where it fits (fully uncensored), but uncensored scenes may be missing voices"
+        },
+        "MODMenuNormal_129": {
+            "text": "На панелі зліва наведіть курсор на кнопку, щоб побачити її опис.\n\n[Звичайні гарячі клавіші]\nEnter, Return, стрілка вправо, PageDown : Перехід далі по тексту\nСтрілка вліво, PageUp : Переглянути попередні рядки\nESC : Відкрити меню\nCtrl : Пропуск вручну (натиснути і утримувати)\nA : Режим авточитання\nS : Увімкнути/вимкнути пропуск\nF, Alt-Enter : На весь екран\nSpace : Сховати текст\nL : Змінити мову\n\n[Гарячі клавіші модифікації]\nF1 : Режим ADV-NVL\nF2 : Рівень цензури\nF3 : Рівень ефектів (Не використовується)\nF5 : Швидке збереження\nF7 : Швидке завантаження\nF10 : Меню модифікації\nM : Збільшити гучність озвучення\nN : Зменшити гучність озвучення\nP : Циклічне перемикання стилів графіки\n2 : Циклічне перемикання BGM/SE\n7 : Увімкнути/Вимкнути синхронізацію губ\nLShift + M : Гучність озвучення на максимум\nLShift + N : Гучність озвучення на мінімум",
+            "TextEN": "Hover over a button on the left panel for its description.\n\n[Vanilla Hotkeys]\nEnter,Return,RightArrow,PageDown : Advance Text\nLeftArrow,Pageup : See Backlog\nESC : Open Menu\nCtrl : Hold Skip Mode\nA : Auto Mode\nS : Toggle Skip Mode\nF, Alt-Enter : FullScreen\nSpace : Hide Text\nL : Swap Language\n\n[MOD Hotkeys]\nF1 : ADV-NVL MODE\nF2 : Voice Matching Level\nF3 : Effect Level (Not Used)\nF5 : QuickSave\nF7 : QuickLoad\nF10 : Mod Menu\nM : Increase Voice Volume\nN : Decrease Voice Volume\nP : Cycle through art styles\n2 : Cycle through BGM/SE\n7 : Enable/Disable Lip-Sync\nLShift + M : Voice Volume MAX\nLShift + N : Voice Volume MINN"
+        },
+        "MODMenuResolution_0": {
+            "comment": "The below entries are for Resolution part of the F10 mod menu, in the file MOD.Scripts.UI/MODMenuResolution.cs",
+            "text": "Встановити повноекранний режим з роздільною здатністю користувача\n\nВикористовуйте цю опцію тільки якщо роздільна здатність повноекранного режиму автоматично визначається невірно (наприклад, таке може відбуватися на деяких збірках Linux)\nНижче ви можете вручну вказати бажану роздільну здатність.\n\nНатисніть \"Очистити користувацькі значення\", аби гра визначала роздільну здатність повноекранного режиму автоматично",
+            "TextEN": "Set a custom fullscreen resolution\n\nUse this option only if the fullscreen resolution is detected incorrectly (such as on some Linux systems)\nYou can manually type in a resolution to use below.\n\nClick 'Clear Override' to let the game automatically determine the fullscreen resolution"
+        },
+        "MODMenuResolution_1": {
+            "text": "Роздільна здатність віконного режиму",
+            "TextEN": "Windowed Resolution Settings"
+        },
+        "MODMenuResolution_2": {
+            "text": "480p",
+            "TextEN": "480p"
+        },
+        "MODMenuResolution_3": {
+            "text": "Встановити роздільну здатність 853 x 480",
+            "TextEN": "Set resolution to 853 x 480"
+        },
+        "MODMenuResolution_4": {
+            "text": "720p",
+            "TextEN": "720p"
+        },
+        "MODMenuResolution_5": {
+            "text": "Встановити роздільну здатність 1280 x 720",
+            "TextEN": "Set resolution to 1280 x 720"
+        },
+        "MODMenuResolution_6": {
+            "text": "1080p",
+            "TextEN": "1080p"
+        },
+        "MODMenuResolution_7": {
+            "text": "Встановити роздільну здатність 1920 x 1080",
+            "TextEN": "Set resolution to 1920 x 1080"
+        },
+        "MODMenuResolution_8": {
+            "text": "1440p",
+            "TextEN": "1440p"
+        },
+        "MODMenuResolution_9": {
+            "text": "Встановити роздільну здатність 2560 x 1440",
+            "TextEN": "Set resolution to 2560 x 1440"
+        },
+        "MODMenuResolution_10": {
+            "text": "Встановити вручну",
+            "TextEN": "Set"
+        },
+        "MODMenuResolution_11": {
+            "text": "Встановлює користувацькі значення роздільної здатності - в основному використовується для режиму вікна.\n\nЗначення висоти автоматично підлаштовується до співвідношення сторін 16:9.",
+            "TextEN": "Sets a custom resolution - mainly for windowed mode.\n\nHeight set automatically to maintain 16:9 aspect ratio."
+        },
+        "MODMenuResolution_12": {
+            "text": "Занадто мала висота - значення має бути не менше 480 пікселів",
+            "TextEN": "Height too small - must be at least 480 pixels"
+        },
+        "MODMenuResolution_13": {
+            "text": "Занадто велика висота - значення не має перевищувати 15360 пікселів",
+            "TextEN": "Height too big - must be less than 15360 pixels"
+        },
+        "MODMenuResolution_14": {
+            "text": "Доступне лише у віконному режимі",
+            "TextEN": "Click here to go Windowed to change these settings"
+        },
+        "MODMenuResolution_15": {
+            "text": "На весь екран",
+            "TextEN": "Toggle Fullscreen"
+        },
+        "MODMenuResolution_16": {
+            "text": "На весь екран",
+            "TextEN": "Go Fullscreen"
+        },
+        "MODMenuResolution_17": {
+            "text": "На весь екран",
+            "TextEN": "Toggle Fullscreen"
+        },
+        "MODMenuResolution_18": {
+            "text": "Ні",
+            "TextEN": "Off"
+        },
+        "MODMenuResolution_19": {
+            "text": "Роздільна здатність режиму на весь екран(Авто: ",
+            "TextEN": "Fullscreen Resolution Override (Detected: "
+        },
+        "MODMenuResolution_20": {
+            "text": " Примусово: ",
+            "TextEN": " Override: "
+        },
+        "MODMenuResolution_21": {
+            "text": "Шир.:",
+            "TextEN": "Width:"
+        },
+        "MODMenuResolution_22": {
+            "text": "Вис.:",
+            "TextEN": "Height:"
+        },
+        "MODMenuResolution_23": {
+            "text": "Натисніть кілька разів, щоб змінити",
+            "TextEN": "Click repeatedly to override resolution"
+        },
+        "MODMenuResolution_24": {
+            "text": "Прим. повноекранна роздільна здатність",
+            "TextEN": "Override Fullscreen Resolution"
+        },
+        "MODMenuResolution_25": {
+            "text": "Неправильно вказана висота",
+            "TextEN": "Invalid Height"
+        },
+        "MODMenuResolution_26": {
+            "text": "Неправильно вказана ширина",
+            "TextEN": "Invalid Width"
+        },
+        "MODMenuResolution_27": {
+            "text": "Скинути",
+            "TextEN": "Clear Override"
+        },
+        "MODMenuResolution_28": {
+            "text": "Занадто мала висота - значення має бути не менше 480 пікселів",
+            "TextEN": "Height too small - must be at least 480 pixels"
+        },
+        "MODMenuResolution_29": {
+            "text": "Занадто велика висота - значення не має перевищувати 15360 пікселів",
+            "TextEN": "Height too big - must be less than 15360 pixels"
+        },
+        "MODMenuAudioOptions_0": {
+            "comment": "The below entries are for the audio options section of the F10 mod menu, in the file MOD.Scripts.UI/MODMenuAudioOptions.cs",
+            "text": "Пресети аудіо (Гаряча клавіша: 2)",
+            "TextEN": "Audio Presets (Hotkey: 2)"
+        },
+        "MODMenuAudioOptions_1": {
+            "text": "Вибрати SE вручну",
+            "TextEN": "Override SE"
+        },
+        "MODMenuAudioOptions_2": {
+            "text": "Невірний порядок BGM",
+            "TextEN": "Invalid BGM cascade"
+        },
+        "MODMenuAudioOptions_3": {
+            "text": "Невірний порядок SE",
+            "TextEN": "Invalid SE cascade"
+        },
+        "MODMenuAudioOptions_4": {
+            "text": " (НЕ ВСТАНОВЛЕНО)",
+            "TextEN": " (NOT INSTALLED)"
+        },
+        "MODMenuAudioOptions_5": {
+            "text": "\n\nУВАГА: Цей набір аудіотреків не встановлено! Ви можете спробувати запустити інсталятор ще раз і оновити модифікацію, додавши цю опцію.\nУ теці StreamingAssets відсутня тека з потрібними BGM чи SE:",
+            "TextEN": "\n\nWARNING: This audio set is not installed! You can try to run the installer again to update your mod with this option.\nYou're missing the BGM or SE folder in the StreamingAssets folder:"
+        },
+        "MODMenuAudioOptions_6": {
+            "text": "Примусово відтворювати наступні звукові ефекти (ігноруючи пресет SE): ",
+            "TextEN": "Force enable the following sound effects (ignore preset SE): "
+        },
+        "MODMenuAudioOptions_7": {
+            "text": "Патч підтримує різні набори фонової музики (BGM) та звукових ефектів (SE). Натисніть на кнопку нижче, щоб перейти на сторінку з додатковою інформацією.",
+            "TextEN": "The patch supports different Background Music (BGM) and Sound Effects(SE). Please click the button below for more information."
+        },
+        "MODMenuAudioOptions_8": {
+            "text": "Відкрити FAQ по BGM/SE : 07th-mod.com/wiki/Higurashi/BGM-SE-FAQ/",
+            "TextEN": "Open BGM/SE FAQ: 07th-mod.com/wiki/Higurashi/BGM-SE-FAQ/"
+        },
+        "MODMenuAudioOptions_9": {
+            "text": "Натисніть тут, щоб відкрити сторінку частих питань (FAQ) щодо фонової музики (BGM) та звукових ефектів (SE) у вашому браузері.\n\nНа сторінці міститься інформація щодо наведених нижче налаштувань.",
+            "TextEN": "Click here to open the  Background Music (BGM) and Sound Effects (SE) FAQ in your browser.\n\nThe BGM/SE FAQ contains information on the settings below."
+        },
+        "MODMenuAudioOptions_10": {
+            "text": "https://07th-mod.com/wiki/Higurashi/BGM-SE-FAQ/",
+            "TextEN": "https://07th-mod.com/wiki/Higurashi/BGM-SE-FAQ/"
+        },
+        "MODMenuAudioOptions_11": {
+            "text": "Для продовження виберіть один з наборів BGM/SE нижче (наведіть курсор на кнопку, щоб побачити більше інформації).\nВибір можна змінити пізніше через меню модифікації.",
+            "TextEN": "To continue, please choose a BGM/SE option below (hover button for info).\nYou can change this option later via the mod menu."
+        },
+        "MODMenuAudioOptions_12": {
+            "text": "Набір не встановлено!",
+            "TextEN": "Option Not Installed!"
+        },
+        "MODMenuAudioSetup_0": {
+            "comment": "The below entries are for the audio setup optiosn which appear the first time you launch the game, in the file MOD.Scripts.UI/MODMenuAudioSetup.cs",
+            "text": "Якщо все готово, натисніть тут.",
+            "TextEN": "Click here when you're finished."
+        },
+        "MODMenuAudioSetup_1": {
+            "text": "Меню налаштування для першого запуску",
+            "TextEN": "First-Time Setup Menu"
+        },
+        "MODMenuAudioSetup_2": {
+            "text": "Перед продовженням оберіть бажані опції зліва. Ви можете наводити курсор на кнопки, щоб прочитати їхній опис.",
+            "TextEN": "Please choose the options on the left before continuing. You can hover over a button to view its description."
+        },
+        "MODMenuSupport_0": {
+            "comment": "The below entries are for the support section of the F10 mod menu, in the file MOD.Scripts.UI/MODMenuSupport.cs",
+            "text": "Наведіть курсор на кнопку, щоб побачити більше інформації",
+            "TextEN": "Please hover over a button for more information"
+        },
+        "MODMenuSupport_1": {
+            "text": "Файли збереження та логи",
+            "TextEN": "Save Files and Log Files"
+        },
+        "MODMenuSupport_2": {
+            "text": "Відкрити теку з output_log.txt / Player.log",
+            "TextEN": "Show output_log.txt / Player.log"
+        },
+        "MODMenuSupport_3": {
+            "text": "Ця кнопка показує розташування файлу ouput_log.txt або Player.log\n\n- У Windows файл має назву \"output_log.txt\", а в MacOS/Linux - \"Player.log\"\n- У цьому файлі записуються помилки, які виникають протягом гри, а також під час запуску\n- Аналіз цього файлу допомагає, якщо гра не запускається - наприклад, через:\n  - пошкоджений файл збереження\n  - неправильний файл інтерфейсу (sharedassets0.assets)\n- Зверніть увагу: при кожному запуску гри файл логу перезаписується",
+            "TextEN": "This button shows the location of the 'ouput_log.txt' or 'Player.log' files\n\n- This file is called 'output_log.txt' on Windows and 'Player.log' on MacOS/Linux\n- This file records errors that occur during gameplay, and during game startup\n- This file helps when the game fails start, for example\n  - a corrupted save file\n  - the wrong UI (sharedassets0.assets) file\n- Note that each time the game starts up, the current log file is replaced"
+        },
+        "MODMenuSupport_4": {
+            "text": "Відкрити теку збережень",
+            "TextEN": "Show Saves"
+        },
+        "MODMenuSupport_5": {
+            "text": "Натисніть, щоб відкрити теку збережень: у ній ви знайдете файли збереження, файли швидкого збереження, та глобальні дані збереження\n\nУ деяких випадках видалення файлів збереження може вирішити проблеми із запуском гри; також видалення цих файлів скине всі прапори, встановлені в модифікації.\n\n- УВАГА: Якщо ви видалите файли вручну, вони відновляться зі Steam Сloud! Не забудьте відключити Steam Сloud, інакше видалені файли збереження знову з'являться в теці!\n- У файлі global.dat зберігається прогрес розблокування контенту гри та прапори параметрів модифікації\n- У файлах qsaveX.dat та saveXXX.dat містяться особисті файли збереження. Якщо їх буде пошкоджено, гра зламається\n- Перед внесенням будь-яких змін до файлів збереження рекомендуємо створити їх резервні копії",
+            "TextEN": "Click to open the save folder, which includes saves, quicksaves, and global save data\n\nClearing your save files can fix some issues with game startup, and resets all mod flags.\n\n- WARNING: Steam cloud will restore your saves if you manually delete them! Therefore, remember to disable steam cloud, otherwise your saves will magically reappear!\n- The 'global.dat' file stores your global unlock process and mod flags\n- The 'qsaveX.dat' and 'saveXXX.dat' files contain individual save files. Note that these becoming corrupted can break your game\n- It's recommended to take a backup of all your saves before you modify them"
+        },
+        "MODMenuSupport_6": {
+            "text": "Швидкий доступ до тек гри",
+            "TextEN": "Quick Access to Game Folders"
+        },
+        "MODMenuSupport_7": {
+            "text": "Відкрити теку .assets",
+            "TextEN": "Show .assets Folder"
+        },
+        "MODMenuSupport_8": {
+            "text": "Натисніть, щоб відкрити теку гри з основними даними: у ній містяться файли .assets.\n\nУ файлі sharedassets0.assets зберігаються шрифти, певні текстури та інші дані гри.",
+            "TextEN": "Click to open the game's main data folder, which contains the .assets files.\n\nFonts, certain textures, and other game data is kept in the sharedassets0.assets file."
+        },
+        "MODMenuSupport_9": {
+            "text": "Відкрити теку StreamingAssets",
+            "TextEN": "Show StreamingAssets Folder"
+        },
+        "MODMenuSupport_10": {
+            "text": "Натисніть, щоб відкрити теку StreamingAssets: у ній міститься більшість ресурсів гри.\n\n- Більшість зображень/текстур, у тому числі спрайти, фонові зображення, зображення з текстом та фільтри\n- Репліки озвучення, фонова музика та звукові ефекти\n- Скрипти гри та компільовані скрипти гри\n- Відеоролики\n- Інші дані гри",
+            "TextEN": "Click to open the StreamingAssets folder, which contains most of the game assets.\n\n- Most Images/Textures, including Sprites, Backgrounds, Text Images, and Filter effects\n- Voices, Background Music, and Sound Effects\n- Game Scripts and Compiled Game Scripts\n- Movies\n- Other Misc Game Data"
+        },
+        "MODMenuSupport_11": {
+            "text": "Відкрити теку DLL",
+            "TextEN": "Show DLL Folder"
+        },
+        "MODMenuSupport_12": {
+            "text": "Натисніть, щоб відкрити теку Managed, у якій міститься наш модифікований файл Assembly-CSharp.dll",
+            "TextEN": "Click to open the 'Managed' folder, which contains our modded 'Assembly-CSharp.dll'"
+        },
+        "MODMenuSupport_13": {
+            "text": "Managed",
+            "TextEN": "Managed"
+        },
+        "MODMenuSupport_14": {
+            "text": "Відкрити теку компільованих скриптів",
+            "TextEN": "Show Compiled Scripts"
+        },
+        "MODMenuSupport_15": {
+            "text": "Іноді через застарілі файли скриптів гра може не запускатися (при запуску зависаючи на чорному екрані).\n\nВи можете вручну видалити файли *.mg (компільовані скрипти) з цієї теки, і гра буде змушена створити їх заново під час наступного запуску.\n\nМайте на увазі: під час компіляції скриптів гра може на пару хвилин зависнути на білому екрані.",
+            "TextEN": "Sometimes out-of-date scripts can cause the game to fail to start up (stuck on black screen).\n\nYou can manually clear the *.mg files (compiled scripts) in this folder to force the game to regenerate them the next time the game starts.\n\nPlease be aware that the game will freeze for a couple minutes on a white screen, while scripts are being compiled."
+        },
+        "MODMenuSupport_16": {
+            "text": "Підтримка",
+            "TextEN": "Support Pages"
+        },
+        "MODMenuSupport_17": {
+            "text": "(EN)Відкрити сторінку підтримки: 07th-mod.com/wiki/Higurashi/support",
+            "TextEN": "Open Support Page: 07th-mod.com/wiki/Higurashi/support"
+        },
+        "MODMenuSupport_18": {
+            "text": "Якщо у вас виникли проблеми з грою, інформація на цьому сайті може допомогти.\n\nТам також є інструкції щодо звітів про помилки і посилання на наш сервер Discord для зв'язку з нами напряму",
+            "TextEN": "If you have problems with the game, the information on this site may help.\n\nThere are also instructions on reporting bugs, as well as a link to our Discord server to contact us directly"
+        },
+        "MODMenuSupport_19": {
+            "text": "https://07th-mod.com/wiki/Higurashi/support/",
+            "TextEN": "https://07th-mod.com/wiki/Higurashi/support/"
+        }
+    }
+}

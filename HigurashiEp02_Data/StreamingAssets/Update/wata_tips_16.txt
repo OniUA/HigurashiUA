@@ -1,0 +1,290 @@
+void main()
+{
+
+//９■深夜の電話
+//*Sub_Tips_036
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	PlayBGM( 2, "lsys17", 56, 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	FadeOutBGM( 2, 10, TRUE );
+
+//「夜分遅くに失礼いたします...＠公由と申しますが、ご主人でいらっしゃいますか＠　......はい＠　いえいえ、その節は本当にありがとうございます＠えぇ＠............それでですね＠...こんな時間に大変恐縮なのですが＠...ウチのお爺ちゃんがお邪魔してないかと思いまして＠.........ですよねぇ＠　はい＠　こんな時間に申し訳ありませんでした＠それでは失礼いたします＠ごめんください......。￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44001", 256, TRUE);
+	OutputLine(NULL, "「夜分遅くに失礼いたします…。",
+		   NULL, "\"Перепрошую, що так пізно телефоную...", Line_Continue);
+	OutputLine(NULL, "公由と申しますが、ご主人でいらっしゃいますか？",
+		   NULL, " Це Кімійоші. Ви — голова родини?..", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44002", 256, TRUE);
+	OutputLine(NULL, "　……はい！",
+		   NULL, " Так!..", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44003", 256, TRUE);
+	OutputLine(NULL, "　いえいえ、その節は本当にありがとうございます。",
+		   NULL, " О, ні-ні-ні. Вельми дякую.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44004", 256, TRUE);
+	OutputLine(NULL, "えぇ。",
+		   NULL, " Так...", Line_Continue);
+	OutputLine(NULL, "…………それでですね、",
+		   NULL, " Та, так сталося...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44005", 256, TRUE);
+	OutputLine(NULL, "…こんな時間に大変恐縮なのですが、",
+		   NULL, " Вибачте, що дзвоню в таку годину... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44006", 256, TRUE);
+	OutputLine(NULL, "…ウチのお爺ちゃんがお邪魔してないかと思いまして。",
+		   NULL, "Я хотів спитати, чи наш дідусь часом не у вас...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44007", 256, TRUE);
+	OutputLine(NULL, "………ですよねぇ！",
+		   NULL, " Так і є!..", Line_Continue);
+	OutputLine(NULL, "　はい！",
+		   NULL, " Так!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44008", 256, TRUE);
+	OutputLine(NULL, "　こんな時間に申し訳ありませんでした。",
+		   NULL, " Ще раз", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44009", 256, TRUE);
+	OutputLine(NULL, "それでは失礼いたします。",
+		   NULL, " прошу вибачення за пізній дзвінок.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44010", 256, TRUE);
+	OutputLine(NULL, "ごめんください……。」",
+		   NULL, " До побачення.\"", Line_Normal);
+	ClearMessage();
+
+
+	PlayBGM( 1, "msys13", 56, 0 );
+
+//　チン￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　チン。",
+		   NULL, "Клац.", Line_Normal);
+	ClearMessage();
+
+
+//「どうだい＠　ダメ？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Жінка</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimif44001", 256, TRUE);
+	OutputLine(NULL, "「どうだい？",
+		   NULL, "\"І?", Line_Continue);
+	OutputLine(NULL, "　ダメ？」",
+		   NULL, " Нічого?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「参ったなぁ...。...@
+// どんなに熱中しても、電話くらいはしてくれる人なんだけれどなぁ！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44011", 256, TRUE);
+	OutputLine(NULL, "「参ったなぁ…。…",
+		   NULL, "\"Я не знаю, що робити...", Line_Continue);
+	OutputLine(NULL, "どんなに熱中しても、電話くらいはしてくれる人なんだけれどなぁ！」",
+		   NULL, " Наскільки б він не затримувався, він завжди хоча б дзвонив!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「囲碁の人の家は全部、電話したんでしょ？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Жінка</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimif44002", 256, TRUE);
+	OutputLine(NULL, "「囲碁の人の家は全部、電話したんでしょ？」",
+		   NULL, "\"Ти подзвонив усім, з ким він грає в ґо?\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 1000, TRUE );
+	PlayBGM( 2, "lsys17", 56, 0 );
+
+//　ジリリリリリリ...ン！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ジリリリリリリ…ン！！",
+		   NULL, "*телефонний дзвінок*", Line_Normal);
+	ClearMessage();
+
+
+	FadeOutBGM( 2, 10, TRUE );
+	PlayBGM( 1, "msys13", 56, 0 );
+
+//「はい＠　公由です。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44012", 256, TRUE);
+	OutputLine(NULL, "「はい！",
+		   NULL, "\"Алло!", Line_Continue);
+	OutputLine(NULL, "　公由です。」",
+		   NULL, " Це Кімійоші.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「園崎です＠どうです＠　村長さんは見つかりましたか？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300078", 256, TRUE);
+	OutputLine(NULL, "「園崎です。",
+		   NULL, "\"Це Сонодзакі.", Line_Continue);
+	OutputLine(NULL, "どうです？",
+		   NULL, " Що у вас там?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300079", 256, TRUE);
+	OutputLine(NULL, "　村長さんは見つかりましたか？」",
+		   NULL, " Ви не знайшли старосту?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「あぁ、魅音ちゃんか＠...片っ端から電話をかけてみたけど、だめだよ＠見つからないんだ...＠参ったなぁ...＠　どこで油を売ってるのかなぁ...！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44013", 256, TRUE);
+	OutputLine(NULL, "「あぁ、魅音ちゃんか。",
+		   NULL, "\"О, Міон...", Line_Continue);
+	OutputLine(NULL, "…片っ端から電話をかけてみたけど、だめだよ。",
+		   NULL, " Я обдзвонив усіх, кого тільки міг, та все дарма.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44014", 256, TRUE);
+	OutputLine(NULL, "見つからないんだ…。",
+		   NULL, " Ми не можемо його знайти...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44015", 256, TRUE);
+	OutputLine(NULL, "参ったなぁ…！",
+		   NULL, " Що мені робити?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44016", 256, TRUE);
+	OutputLine(NULL, "　どこで油を売ってるのかなぁ…！」",
+		   NULL, " Де він може вештатися?..\"", Line_Normal);
+	ClearMessage();
+
+
+//「こっちでも心当たりにいろいろと問い合わせましたけど、!w800...全然。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300080", 256, TRUE);
+	OutputLine(NULL, "「こっちでも心当たりにいろいろと問い合わせましたけど、",
+		   NULL, "\"Я поспілкувалася з кількома людьми, які могли б хоч щось знати...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…全然。」",
+		   NULL, " Теж марно.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「.................................。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44017", 256, TRUE);
+	OutputLine(NULL, "「……………………………。」",
+		   NULL, "\"...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「婆っちゃにも相談したんですが、青年団を召集して探し回った方がいいだろうということです。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300081", 256, TRUE);
+	OutputLine(NULL, "「婆っちゃにも相談したんですが、青年団を召集して探し回った方がいいだろうということです。」",
+		   NULL, "\"Я запитала бабусю, і вона сказала, що треба залучити чоловіків з села на його пошуки.\"", Line_Normal);
+	ClearMessage();
+
+
+//「こ、こんな時間にかい...＠　それに、別に行方不明になったと決まったわけでもないし...、＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44018", 256, TRUE);
+	OutputLine(NULL, "「こ、こんな時間にかい…？",
+		   NULL, "\"У таку годину?..", Line_Continue);
+	OutputLine(NULL, "　それに、別に行方不明になったと決まったわけでもないし…、」",
+		   NULL, " Тобто... він же не зник безвісти...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	PlaySE( 3, "wa_026", 56, 64 );
+
+//「綿流しの直後ですから＠少し慎重に扱った方がいいとのことです＠それでも見つからないなら、明朝、警察に通報しましょう＠見つかる見つからないは別にして、痛くない腹を探られない方がいいでしょうから。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300082", 256, TRUE);
+	OutputLine(NULL, "「綿流しの直後ですから。",
+		   NULL, "\"Щойно пройшов Ватанаґаші.", Line_Continue);
+	OutputLine(NULL, "少し慎重に扱った方がいいとのことです。",
+		   NULL, " Вона вважає, що ми повинні бути обережнішими.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300083", 256, TRUE);
+	OutputLine(NULL, "それでも見つからないなら、明朝、警察に通報しましょう。",
+		   NULL, " Якщо ми так і не знайдемо його, то завтра вранці звернемось до поліції. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300084", 256, TRUE);
+	OutputLine(NULL, "見つかる見つからないは別にして、痛くない腹を探られない方がいいでしょうから。」",
+		   NULL, "А допоки ми маємо утримуватися від будь-яких необґрунтованих звинувачень — неважливо, знайдемо ми його чи ні.\"", Line_Normal);
+	ClearMessage();
+
+//「...お魎さんがそう言ったのかい？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44019", 256, TRUE);
+	OutputLine(NULL, "「…お魎さんがそう言ったのかい？」",
+		   NULL, "\"Орьо так сказала?..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「はい＠直接、声を聞かないと信用できないなら、電話先に出させますよ？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300085", 256, TRUE);
+	OutputLine(NULL, "「はい。",
+		   NULL, "\"Так.", Line_Continue);
+	OutputLine(NULL, "直接、声を聞かないと信用できないなら、電話先に出させますよ？」",
+		   NULL, " Якщо ви не вірите мені, я можу зараз передати їй слухавку.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「い、いえ...＠　わかりました＠青年団を集めて探しましょう＠それで見つからなければ...翌朝に警察に通報します。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44020", 256, TRUE);
+	OutputLine(NULL, "「い、いえ…！",
+		   NULL, "\"Ні-ні, усе гаразд!..", Line_Continue);
+	OutputLine(NULL, "　わかりました。",
+		   NULL, " Я зрозумів.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44021", 256, TRUE);
+	OutputLine(NULL, "青年団を集めて探しましょう。",
+		   NULL, " Будемо збирати людей і шукати.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44022", 256, TRUE);
+	OutputLine(NULL, "それで見つからなければ…翌朝に警察に通報します。」",
+		   NULL, " Якщо не знайдемо... то вранці звернемося до поліції.\"", Line_Normal);
+	ClearMessage();
+
+//「青年団の連絡網、よろしくお願いしますね＠私も婆っちゃの代行ということでそちらに参ります。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300086", 256, TRUE);
+	OutputLine(NULL, "「青年団の連絡網、よろしくお願いしますね。",
+		   NULL, "\"Вона хоче залишити організацію людей на вас.", Line_Continue);
+	OutputLine(NULL, "私も婆っちゃの代行ということでそちらに参ります。」",
+		   NULL, " Я також скоро підійду, як її представниця.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「あ、ありがとう＠すぐにみんなを集めます...。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3cfb5>公由</color>", NULL, "<color=#f3cfb5>Кімійоші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kimim44023", 256, TRUE);
+	OutputLine(NULL, "「あ、ありがとう。",
+		   NULL, "\"Д-дякую.", Line_Continue);
+	OutputLine(NULL, "すぐにみんなを集めます…。」",
+		   NULL, " Я терміново зберу всіх...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「えぇ＠では。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300087", 256, TRUE);
+	OutputLine(NULL, "「えぇ。",
+		   NULL, "\"Дякую.", Line_Continue);
+	OutputLine(NULL, "では。」",
+		   NULL, " Бувайте.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 1000 );
+	SetValidityOfInput( TRUE );
+
+
+}

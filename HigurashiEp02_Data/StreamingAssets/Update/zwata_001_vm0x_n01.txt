@@ -1,0 +1,64 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Сатоко</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400171", 256, TRUE);
+	OutputLine(NULL, "「圭一さんがぶったぁあぁあ！！！",
+		   NULL, "\"Кейчі мене сту-у-укну-у-у-ув!!!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 4, "ps3/s19/04/990400172", 256, TRUE);
+	OutputLine(NULL, "　わぁああぁああぁあああぁあんッ！！！」",
+		   NULL, " У-а-а-а-а-а-а-а-а!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300411", 256, TRUE);
+	OutputLine(NULL, "「みんないいかな〜？！",
+		   NULL, "\"Всі готові~?!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300412", 256, TRUE);
+	OutputLine(NULL, "　傾聴傾聴〜！！」",
+		   NULL, " Хвилинку уваги~!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300473", 256, TRUE);
+	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日からアレな趣味の人扱いだね。うん！」",
+		   NULL, "\"Як будеш із нею розгулювати, тебе вже завтра охрестять диваком. Точно тобі кажу!\"", Line_Normal);
+
+	ClearMessage();
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+
+	OutputLine(NULL, "　百億兆者ゲーム。",
+		   NULL, "На коробці було написано \"Мільйонер\".", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+}

@@ -1,0 +1,76 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+}
+
+void dialog002()
+{
+}
+
+void dialog003()
+{
+}
+
+void dialog004()
+{
+}
+
+void dialog005()
+{
+}
+
+void dialog006()
+{
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11550", 256, TRUE);
+	OutputLine(NULL, "「をぼえてろ魅音んんん〜ッ！！！",
+		   NULL, "\"Ти проклинатимеш цей день, Міо-о-о-о-о-н~!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11560", 256, TRUE);
+	OutputLine(NULL, "　今日の屈辱はきっと１０倍にして返すッ！！",
+		   NULL, " Я десятикратно відплачу тобі за свій сором!!!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11570", 256, TRUE);
+	OutputLine(NULL, "　ぜってーに俺が圧勝して、路上羞恥プレイに処してやるー！」",
+		   NULL, " Моя перемога буде розгромною! А за твоїм ганебним покаранням спостерігатиме все село!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11830", 256, TRUE);
+	OutputLine(NULL, "「魅音って結構、胸があるから今にもこぼれそうだよなー。",
+		   NULL, "\"Міон, у тебе такі великі груди — от-от із форми щось випаде...", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11840", 256, TRUE);
+	OutputLine(NULL, "お客さんみんな見てるぞきっと〜！」",
+		   NULL, " На тебе всі відвідувачі витріщаються~!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei12100", 256, TRUE);
+	OutputLine(NULL, "「詩音はウェイトレスの仕事、初めてなのか？",
+		   NULL, "\"Шіон, ти тільки недавно офіціанткою влаштувалася?", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei12110", 256, TRUE);
+	OutputLine(NULL, "　慣れてなさそうだったからさ。」",
+		   NULL, " Не схоже, що ти звикла до такої роботи.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

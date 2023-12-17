@@ -1,0 +1,24 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700188", 256, TRUE);
+	OutputLine(NULL, "「いつもそうですが、事件と車のキーの閉じ込めはよく似てます。",
+		   NULL, "\"Це як коли машина замкнулася, а ключі лишилися всередині.", Line_Continue);
+	OutputLine(NULL, "開けるためのカギはいつもその中に閉じ込められているんです。",
+		   NULL, " Тобі б відкрити двері, а нема як — ключі ж бо в машині.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700189", 256, TRUE);
+	OutputLine(NULL, "車ならＪＡＦを呼んで扉をこじ開ける。",
+		   NULL, " Але з машиною можна хоча б дорожню службу викликати, аби вони двері відкрили.", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+}

@@ -1,0 +1,35 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700233", 256, TRUE);
+	OutputLine(NULL, "　…なんらかの薬物中毒を疑っているんですが検出はされませんでした。」",
+		   NULL, "У нас була теорія щодо передозування якоюсь наркотичною речовиною, але ми досі нічого не виявили.\"", Line_Normal);
+}
+
+void dialog002()
+{
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700281", 256, TRUE);
+	OutputLine(NULL, "「口封じをされるような、とんでもない物が隠してあったんじゃないですか？",
+		   NULL, "\"І що, нічого такого, про що вас могли б змусити мовчати?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700285", 256, TRUE);
+	OutputLine(NULL, "不審な木箱やコンテナが山積みされてませんでしたか？」",
+		   NULL, " Може, там стояли якісь підозрілі дерев'яні коробки чи контейнери?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+}

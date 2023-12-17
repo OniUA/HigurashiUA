@@ -1,0 +1,62 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700414", 256, TRUE);
+	OutputLine(NULL, "「前原さんの好みがわからなかったので、いろいろと持ってきましたよ〜。",
+		   NULL, "\"Я не знав, які у вас вподобання, пане Маебара, тому я всього потроху приніс~", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700415", 256, TRUE);
+	OutputLine(NULL, "ほぅら、洋物に劇画からかわいらしいのまで色々！",
+		   NULL, " Тут стільки миленького: і західні комікси, і еро-йонкоми!..", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s02/11/130700416", 256, TRUE);
+	OutputLine(NULL, "　最近はこんな女の子向けみたいなＨマンガもあるんですねぇ〜。」",
+		   NULL, " У них тут продається навіть оця еротика, яка на дівчат розрахована~\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//「エエエエ、エロ本なんか持ってこないで下さい～！！＠　持って帰って持って帰って！＠　痛ててててて...！！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101198", 256, TRUE);
+	OutputLine(NULL, "「エエエエ、エロ本なんか持ってこないで下さい〜！！！",
+		   NULL, "\"В-в-в-в-в-ви що, еро-манґу сюди приперли~?!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101199", 256, TRUE);
+	OutputLine(NULL, "　持って帰って持って帰って！！",
+		   NULL, " Заберіть, заберіть негайно!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s02/01/130101200", 256, TRUE);
+	OutputLine(NULL, "　痛ててててて…！！」",
+		   NULL, " Ай... ой-йой-йой-йой...\"", Line_Normal);
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Оойші</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps2/11/130700467", 540, TRUE);
+	OutputLine(NULL, "「園崎家は本業の方、",
+		   NULL, "\"Бачте, діяльність родини Сонодзакі тісно пов'язана із...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "…あぁ、ヤクザ屋さんのことです。",
+		   NULL, " кхм... якудза.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700468", 540, TRUE);
+	OutputLine(NULL, "…で、覚醒剤を扱ってるとの噂がありましてね。",
+		   NULL, " Так от, ходять чутки про те, що вони підторговують психостимуляторами.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps2/11/130700469", 540, TRUE);
+	OutputLine(NULL, "…その可能性もあるかなんて思ってたのですが。」",
+		   NULL, " Я подумав, може, тут є якийсь зв'язок...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//「.........梨花ちゃんが、...覚醒剤の常用者だって言うのか...？！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps2/01/130101215", 540, TRUE);
+	OutputLine(NULL, "「………梨花ちゃんが、…覚醒剤の常用者だって言うのか…？！」",
+		   NULL, "\"Ви хочете сказати... що Ріка вживала наркотики?!\"", Line_Normal);
+}

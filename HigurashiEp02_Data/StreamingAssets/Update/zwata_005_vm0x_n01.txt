@@ -1,0 +1,182 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50001", 256, TRUE);
+	OutputLine(NULL, "「エンジェルモートのフィギュアが今度発売されるらしいでござるな。",
+		   NULL, "\"Я чув, що в продаж хочуть пустити фігурки офіціанток \"Ангел Морт\".", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50002", 256, TRUE);
+	OutputLine(NULL, "次のイベントは要注意でござる…！！」",
+		   NULL, " Наступного разу треба не забути!..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//オタク「そうそう、今度あの大手フィギュアメーカーが商品化を決めたそうであります！　発売日は要チェックなのであります…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaf50001", 256, TRUE);
+	OutputLine(NULL, "「そうそう、今度あの大手フィギュアメーカーが商品化を決めたそうであります！",
+		   NULL, "\"До речі, у того виробника одразу вийде вся серія!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaf50002", 256, TRUE);
+	OutputLine(NULL, "　発売日は要チェックなのであります…！」",
+		   NULL, " Треба перевірити, коли реліз!..\"", Line_Normal);
+	ClearMessage();
+
+//オタク「しかし大人買いするには種類が多すぎるのでごわすな……。普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otag50001", 256, TRUE);
+	OutputLine(NULL, "「しかし大人買いするには種類が多すぎるのでごわすな……。",
+		   NULL, "\"Ага, проблема тільки в тому, що всі зразу не купиш — там варіацій достобіса... ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otag50002", 256, TRUE);
+	OutputLine(NULL, "　普通のファミレス制服のフィギュアなら１０種類程度でごわすのに……今度のはシークレットポーズ差分込みでざっと１００種類！！",
+		   NULL, "Якби це був просто ряд фігурок з різними типами форми для сімейного ресторану, було б усього 10 типів... А так там ще є ексклюзиви, з різними позами, і це загалом близько сотні!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//オタク「ダブった時は誰かトレードしてもらいたいでおじゃる～。　ファンとしては即日コンプは義務！　いや君とボクとのデスティニーでおじゃるよ～！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otah50001", 256, TRUE);
+	OutputLine(NULL, "「ダブった時は誰かトレードしてもらいたいでおじゃる〜。",
+		   NULL, "\"Якщо мені дістанеться повтор, давайте мінятися~☆", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otah50002", 256, TRUE);
+	OutputLine(NULL, "　ファンとしては即日コンプは義務！",
+		   NULL, " Я справжній фанат, тому зібрати всю колекцію — мій обов'язок!", Line_Continue);
+	OutputLine(NULL, "　いや君とボクとのデスティニーでおじゃるよ〜！！」",
+		   NULL, " Ні, це моя доля~!!!\"", Line_Normal);
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18070", 256, TRUE);
+	OutputLine(NULL, "「やかましいぞ重量オーバー！",
+		   NULL, "\"Стулися, жирдяй!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18080", 256, TRUE);
+	OutputLine(NULL, "　俺の目が黒い内に出て失せろ。」",
+		   NULL, " Ану геть звідси, поки я остаточно не розізлився.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50008", 256, TRUE);
+	OutputLine(NULL, "そのスタッフが余のおズボンに粗相をしたのでござるよ？",
+		   NULL, " Оця офіціанточка мені штани намочила!", Line_WaitForInput);
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18350", 256, TRUE);
+	OutputLine(NULL, "「…それについては返す言葉がない。」",
+		   NULL, "\"На це мені нічого відповісти...\"", Line_Normal);
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50006", 256, TRUE);
+	OutputLine(NULL, "「僕もにゃりんよ。",
+		   NULL, "\"Мені теж ня-добре.", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50007", 256, TRUE);
+	OutputLine(NULL, "オープンでなくクローズドの方でござる！",
+		   NULL, " Щось мені приперло!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50008", 256, TRUE);
+	OutputLine(NULL, "　要リプレイ外しにゃりん！」",
+		   NULL, " Мені по-великому треба!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50019", 256, TRUE);
+	OutputLine(NULL, "「おトイレはどこにゃー？！",
+		   NULL, "\"Де в них вбиральня?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50020", 256, TRUE);
+	OutputLine(NULL, "　見つけたにゃー！",
+		   NULL, " З-ня-йшов!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50021", 256, TRUE);
+	OutputLine(NULL, "　緊急発進スクランブルにょ〜！！！」",
+		   NULL, " Пустіть!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otae50023", 256, TRUE);
+	OutputLine(NULL, "「はぁはぁ…背に腹は代えられぬ〜〜！！！！！」",
+		   NULL, "\"*важко дихає* У жіночих вбиральнях так класно~~!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50012", 256, TRUE);
+	OutputLine(NULL, "「それは助かるにゃりん！！",
+		   NULL, "\"Ідеаль-ня!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50013", 256, TRUE);
+	OutputLine(NULL, "　さぁさぁ！！",
+		   NULL, " Побігли, побігли!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otad50014", 256, TRUE);
+	OutputLine(NULL, "　このままじゃ集団デフコン１状態にゃりん〜！！」",
+		   NULL, " А то через кілька хвилин може статися ко-ня-фуз~~!!!\"", Line_Normal);
+}
+
+void dialog009()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18710", 256, TRUE);
+	OutputLine(NULL, "「悪人ども…！！",
+		   NULL, "\"Агов, жирні придурки!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei18720", 256, TRUE);
+	OutputLine(NULL, "　この扉から一歩外へ出ることがどういうことになるか、わかってるんだろうな？！」",
+		   NULL, " Знаєте, що буде, якщо ви зробите хоч крок за двері?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog010()
+{
+}
+
+void dialog011()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300188", 256, TRUE);
+	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日からアレな趣味の人扱いだね。うん！」",
+		   NULL, "\"Як будеш із нею розгулювати, тебе вже завтра охрестять диваком. Точно тобі кажу!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog012()
+{
+}
+
+void dialog013()
+{
+}
+
+void dialog014()
+{
+}
+
+void dialog015()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>オタク</color>", NULL, "<color=#f5e6d3>Отаку</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/otaa50002", 256, TRUE);
+	OutputLine(NULL, "「今度はミーのおズボンにぶっかけさせて、一層念入りにフキフキしてもらうニョリ！！」",
+			 NULL, "\"Треба, щоб цього разу вона розлила на мене все-все, тоді я змушу її витерти мене особливо старанно!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}

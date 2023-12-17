@@ -1,0 +1,209 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300509", 256, TRUE);
+	OutputLine(NULL, "「はーい！！　みんな傾注傾注〜！",
+		   NULL, "\"Так! Увага всім~!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300510", 256, TRUE);
+	OutputLine(NULL, "　ルールを説明するよ〜！！」",
+		   NULL, " Починаю пояснювати правила~!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0002", 256, TRUE);
+	OutputLine(NULL, "　……小学校の頃…罰ゲームってのがあったら……うん。",
+		   NULL, "\"Ага, у початковій школі щось схоже робили.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0003", 256, TRUE);
+	OutputLine(NULL, "やっぱりアレだよな。",
+		   NULL, " Певно, мова про те...", Line_WaitForInput);
+
+	PlaySE( 3, "wa_010", 56, 64 );
+
+//荷物持ち￥
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/vt0_keiichi0004", 256, TRUE);
+	OutputLine(NULL, "荷物持ち！",
+		   NULL, " що той, хто програв, несе портфелі переможців!\"", Line_Normal);
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Ріка</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500121", 256, TRUE);
+	OutputLine(NULL, "「………「カードマスターさくら」って書いてありますです。」",
+		   NULL, "\"...Тут написано \"Володарка карт Сакура\".\"", Line_Normal);
+
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11170", 256, TRUE);
+	OutputLine(NULL, "「さ、",
+		   NULL, "\"Са--", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 500 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "ささッ、",
+		   NULL, " Са--", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+
+	OutputLine(NULL, "さ",
+		   NULL, " Са---", Line_Continue);
+
+
+	PlaySE( 3, "wa_006", 56, 64 );
+	PlayBGM( 1, "msys03", 56, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+
+	OutputLine(NULL, "くらって言ったら「カードマスターさくら」だろーッ？！？！",
+		   NULL, "Сакура — ну це ж про серіал \"Володарка карт Сакура\", хіба ні?!", Line_WaitForInput);
+	OutputLine(NULL, "　国営放送で毎週放送中の大人気アニメ！！！",
+		   NULL, " Суперпопулярне аніме, транслюється кожного тижня на державних каналах!!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　小さな女の子から大きなお友達まで大ヒットブレイク中のっぉおおぉッ！！",
+		   NULL, "Його ж усі знають — від маленьких дівчаток до дорослих чоловікі-і-і-і-ів!!!", Line_WaitForInput);
+	OutputLine(NULL, "　お前らだって見てるだろ？！",
+		   NULL, " Ви його хіба не дивилися?!", Line_WaitForInput);
+	OutputLine(NULL, "　いや絶対見てるさ、俺だって見てるくらいなんだからぁああぁあぁあッ！！！！」",
+		   NULL, " Та ні, точно дивилися, навіть я диви-и-ився-я-я-я!!!\"", Line_Normal);
+}
+
+void dialog005()
+{
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300596", 256, TRUE);
+	OutputLine(NULL, "「……いやそんな、力説しなくてもよく知ってるよ。",
+		   NULL, "\"Та знаю я. І без твоїх недолугих пояснень.", Line_WaitForInput);
+
+	OutputLine(NULL, "あの毎週、違うコスチュームで戦うヤツでしょ？",
+		   NULL, " Це та байда, де дівчинка кожної серії з кимось чубиться в чудернацькому костюмі?", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300598", 256, TRUE);
+	OutputLine(NULL, "　うん。",
+		   NULL, " Ага.", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "知ってる知ってる。」",
+		   NULL, " Знаю-знаю.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рена</color>", NULL, Line_ContinueAfterTyping); }
+
+	OutputLine(NULL, "「うんうん。",
+		   NULL, "\"Так-так.", Line_WaitForInput);
+	OutputLine(NULL, "かぁいいんだよね！",
+		   NULL, " Воно таке миленьке, скажи?", Line_WaitForInput);
+	OutputLine(NULL, "　レナもたまに立ち読みでストーリーちゃんと追ってるよ☆」",
+		   NULL, " Рена іноді на журнальному стенді переглядає новенький розділ манґи, щоб знати, що там далі☆.\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Сатоко</color>", NULL, Line_ContinueAfterTyping); }
+
+	OutputLine(NULL, "「最近、見始めましたわ。",
+		   NULL, "\"А от я лише нещодавно вперше подивилася.", Line_WaitForInput);
+	OutputLine(NULL, "さくらが元気一杯でカッコイイんですの！」",
+		   NULL, " Сакура така крута й весела!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Ріка</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「……ボクはビデオを撮ってる女の子が好きなのです。」",
+		   NULL, "\"...А мені подобається та дівчинка, яка все на камеру знімає.\"", Line_Normal);
+}
+
+void dialog010()
+{
+//「小さい女の子だけじゃなくて、その道の割と大きな男の子にも人気があるんだって＠...圭ちゃんもその一人だったとはねぇ～。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「小さい女の子だけじゃなくて、その道の割と大きな男の子にも人気があるんだって？",
+		   NULL, "\"Виявляється, воно популярне не лише серед дівчаток, а й у старших хлопців...", Line_WaitForInput);
+	OutputLine(NULL, "…圭ちゃんもその一人だったとはねぇ〜。」",
+		   NULL, " От, і нашому Кею подобається~.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　思わず余計なことまで言って自爆してしまったようだが...問題なのはそこじゃない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　思わず余計なことまで言って自爆してしまったようだが…問題なのはそこじゃない。",
+		   NULL, "Здається, я видав щось, що не слід було, і жахливо осоромився, але... не в цьому була головна проблема.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_006", 56, 64 );
+	ShakeScreen( 1, 50, 20, 3, 0, );
+
+//「お、お前ら全員知ってるじゃねぇかぁあぁあ？！？＠　それを何で書かなねぇんだよぉおぉおお？！？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「お、お前ら全員知ってるじゃねぇかぁあぁあ？！？！",
+		   NULL, "\"Т-так ви всі насправді знаєте таке аніме?!", Line_WaitForInput);
+	OutputLine(NULL, "　それを何で書かなねぇんだよぉおぉおお？！？！",
+		   NULL, " Тоді чому так не написали?!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　さくらっつったら木之元さくら！＠　さくらたんはぁはぁ！＠　カードマスターさくらって考えるのが正しいんだよぉおおおぉおぉおーー...ッ！！！」/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейчі</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　さくらっつったら木之元さくら！！",
+		   NULL, "Сакура! Ну це ж очевидно Кіномото Сакура!!!", Line_WaitForInput);
+	OutputLine(NULL, "　さくらたんはぁはぁ！！",
+		   NULL, " Головна героїня, Сакура!!! *важко дихає*", Line_WaitForInput);
+	OutputLine(NULL, "　カードマスターさくらって考えるのが正しいんだよぉおおおぉおぉおーー…ッ！！！」",
+		   NULL, " Володарка карт Сакура — правильна відповідь!!!\"", Line_ContinueAfterTyping);
+
+	PlaySE( 3, "wa_007", 56, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
+	ClearMessage();
+	DisableWindow();
+
+}
+
+void dialog011()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Міон</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300641", 256, TRUE);
+	OutputLine(NULL, "　こ〜れで股間にでっかいのが付いてなきゃ本物の女の子なのにな〜〜！！」",
+		NULL, "Коли б тільки між ногами в тебе нічого зайвого не теліпалося, з тебе була б така хороша дівчинка~~!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
