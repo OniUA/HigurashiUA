@@ -994,7 +994,7 @@ void main()
 //　...だが、子供がこんな１０人近くも出入りしているなんて...繁盛し過ぎだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だが、子供がこんな１０人近くも出入りしているなんて…繁盛し過ぎだ！",
-		   NULL, "Але до неї один за одним заходили діти, десь з десяток за раз... у власників добре йдуть справи!", Line_Normal);
+		   NULL, "Але до неї один за одним заходили діти, десь із десяток за раз... у власників добре йдуть справи!", Line_Normal);
 	ClearMessage();
 
 //「ひょっとして...あの店で今日、何かイベントでもあるのか？＠
@@ -1637,7 +1637,7 @@ void main()
 //　......レナの場合、テンションゲージを振り切ってからが本番だからな＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……レナの場合、テンションゲージを振り切ってからが本番だからな！",
-		   NULL, "У випадку із Реною, справжні веселощі починаються, коли в неї зашкалює її \"милометр\"!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "У випадку з Реною, справжні веселощі починаються, коли в неї зашкалює її \"милометр\"!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2727,7 +2727,7 @@ void main()
 //　そこでルールに従い、店のマスターにお伺いを立てることにする￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこでルールに従い、店のマスターにお伺いを立てることにする。",
-		   NULL, "Згідно із правилами, ми звернулися до власника крамниці.", Line_Normal);
+		   NULL, "Згідно з правилами, ми звернулися до власника крамниці.", Line_Normal);
 	ClearMessage();
 
 //　マスターが埃を払いながら、奥からボードゲームを持ってきてくれた＠

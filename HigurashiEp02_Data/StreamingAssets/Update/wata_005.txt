@@ -6456,7 +6456,7 @@ void main()
 //　詩音は上機嫌に笑いながら、えい！と言って腕に組み付いてきた。...ちょっとドキドキ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音は上機嫌に笑いながら、えい！と言って腕に組み付いてきた。…ちょっとドキドキ。",
-		   NULL, "Грайливо сміючись, Шіон обійняла мою руку... У мене трохи серце із грудей не вискочило.", Line_Normal);
+		   NULL, "Грайливо сміючись, Шіон обійняла мою руку... У мене ледь серце із грудей не вискочило.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 6, "sprite/si1a_wink_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
@@ -6548,7 +6548,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шіон</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600268", 256, TRUE);
 	OutputLine(NULL, "「口ではそんなこと言ってますけど。",
-		   NULL, "\"Та ну, не придумуй.", Line_WaitForInput);
+		   NULL, "\"Та ну, не вигадуй.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600269", 256, TRUE);
 	OutputLine(NULL, "圭ちゃんはちゃんと私とお姉を区別してますよ。」",
 		   NULL, " Нас відрізнити дуже легко.\"", GetGlobalFlag(GLinemodeSp));
